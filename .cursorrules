@@ -1,0 +1,315 @@
+# Master Thesis AI Writer Rules - L-Moments Flood Frequency Analysis
+
+## General Thesis Writing Guidelines
+
+1. **Academic Writing Style**
+   - Use formal, objective, and precise language
+   - Avoid contractions (don't, can't, won't)
+   - Write in third person (avoid "I", "we", "you")
+   - Use passive voice where appropriate for scientific writing
+   - Maintain consistency in terminology throughout the document
+
+2. **Statistical Terminology**
+   - Use proper statistical notation and symbols consistently
+   - Define all statistical terms and symbols when first introduced
+   - Follow standard hydrological and statistical conventions
+   - Use appropriate precision for numerical results (typically 3-4 significant figures)
+
+3. **Citation and Referencing (APA Style)**
+   - Use American Psychological Association (APA) 7th edition style for all citations and references
+   - Cite all statistical methods, formulas, and theoretical concepts
+   - Include recent and authoritative sources for L-moments methodology
+   - Reference key papers: Hosking (1990) for L-moments, and related flood frequency analysis literature
+   
+   **IMPORTANT - Reference Management Workflow:**
+   - **Central Reference File**: All references are stored in `references/references.md`
+   - **When adding in-text citations**: ALWAYS add the full reference to `references/references.md` if it does not already exist
+   - **Before citing**: Check if the reference already exists in `references/references.md` to avoid duplicates
+   - **After adding citations to any chapter**: Update `references/references.md` with any new references
+   - **Reference organization**: References in `references/references.md` are organized by topic/category
+   - **Workflow**: 
+     1. Add in-text citation to chapter (e.g., "Hosking (1990)" or "(Hosking, 1990)")
+     2. Check if reference exists in `references/references.md`
+     3. If not, add the full APA-formatted reference to the appropriate category
+     4. If a new category is needed, create it with a `## Category Name` header
+   
+   **In-Text Citations:**
+   - Single author: (Author, Year) or Author (Year)
+     - Example: (Hosking, 1990) or Hosking (1990)
+   - Two authors: (Author1 & Author2, Year) or Author1 and Author2 (Year)
+     - Example: (Greenwood et al., 1979) or Greenwood et al. (1979)
+   - Three or more authors: (FirstAuthor et al., Year) or FirstAuthor et al. (Year)
+     - Example: (Smith et al., 2020) or Smith et al. (2020)
+   - Multiple citations: (Author1, Year1; Author2, Year2)
+     - Example: (Hosking, 1990; Greenwood et al., 1979)
+   - Page numbers for direct quotes: (Author, Year, p. X) or (Author, Year, pp. X-Y)
+   - Multiple works by same author: (Author, Year1, Year2)
+   
+   **Reference List Format:**
+   - Journal article: Author, A. A., & Author, B. B. (Year). Title of article. *Journal Name*, *Volume*(Issue), pages. https://doi.org/xx.xxx/yyyy
+   - Book: Author, A. A. (Year). *Title of book*. Publisher.
+   - Chapter in edited book: Author, A. A. (Year). Title of chapter. In B. B. Editor (Ed.), *Title of book* (pp. pages). Publisher.
+   - Conference paper: Author, A. A. (Year, Month). Title of paper. In *Proceedings of Conference Name* (pp. pages). Publisher.
+   - Government report: Organization Name. (Year). *Title of report* (Report No. XXX). Publisher.
+   - Website: Author, A. A. (Year, Month Day). Title of webpage. *Website Name*. URL
+   
+   **APA Formatting Rules:**
+   - Alphabetize references by first author's last name
+   - Use hanging indent (first line flush left, subsequent lines indented)
+   - Italicize journal names, book titles, and volume numbers
+   - Use "&" for multiple authors in reference list, "and" in narrative citations
+   - Include DOI (Digital Object Identifier) when available
+   - For works without DOI, include URL if accessible online
+   - Use sentence case for article and chapter titles (capitalize first word, proper nouns, and first word after colon)
+   - Use title case for journal names and book titles (capitalize major words)
+   - Include all authors up to 20; for 21 or more, list first 19, then "..." and last author
+   
+   **Common Reference Examples:**
+   - Hosking, J. R. M. (1990). L-moments: Analysis and estimation of distributions using linear combinations of order statistics. *Journal of the Royal Statistical Society: Series B (Methodological)*, *52*(1), 105-124.
+   - Greenwood, J. A., Landwehr, J. M., Matalas, N. C., & Wallis, J. R. (1979). Probability weighted moments: Definition and relation to parameters of several distributions expressible in inverse form. *Water Resources Research*, *15*(5), 1049-1054. https://doi.org/10.1029/WR015i005p01049
+
+## L-Moments Flood Frequency Analysis Specific Rules
+
+1. **L-Moments Methodology**
+   - Always explain L-moments as linear combinations of probability-weighted moments (PWMs)
+   - Define L-moments (L1, L2, L3, L4) clearly with their physical interpretations
+   - L1 = mean, L2 = scale, L3 = skewness, L4 = kurtosis
+   - Include the relationship between L-moments and conventional moments when relevant
+   - Explain advantages: robustness to outliers, less sensitive to sample size
+
+2. **Distribution Fitting**
+   - Mention common distributions used in flood frequency analysis:
+     - Gumbel (GUM)
+     - Normal (NOR)
+     - Exponential (EXP)
+     - Generalized Extreme Value (GEV)
+     - Generalized Logistic (GLO)
+     - Generalized Normal (GNO)
+     - Generalized Pareto (GPA)
+     - Pearson Type III (PE3)
+     - Kappa (KAP)
+   - Explain L-moment ratio diagrams (L-skewness vs L-kurtosis) for distribution selection
+   - Include goodness-of-fit tests: Mean Absolute Deviation Index (MADI) and Mean Squared Deviation Index (MSDI)
+   - Use Gringorten plotting positions for quantile-quantile plots
+
+3. **Flood Frequency Analysis Procedures**
+   - Describe data requirements: annual maximum series (AMS) or partial duration series (PDS)
+   - Explain return period calculations (T = 1/P, where P is exceedance probability)
+   - Include quantile estimation for various return periods (2, 5, 10, 25, 50, 100, 200 years)
+   - Discuss regional frequency analysis when applicable
+   - Address uncertainty in estimates (confidence intervals, standard errors)
+
+4. **Overestimation Quantification**
+   - Quantify the degree of overestimation when using Annual Maxima (AM) approach relative to daily rainfall data
+   - Calculate Overestimation Factor: OE(M) = RP_AM(M) / (RP_daily(M) / 365.25)
+     - Where RP_AM(M) is the return period in years from Annual Maxima analysis
+     - Where RP_daily(M) is the return period in days from daily data analysis
+     - Convert daily return period to years by dividing by 365.25
+   - Calculate Overestimation Percentage: OE%(M) = ((RP_AM(M) / (RP_daily(M) / 365.25)) - 1) × 100
+   - Present overestimation results with clear interpretation of the bias magnitude
+   - Example values: Overestimation Factor of 4.2947x corresponds to 329.47% overestimation
+   - Discuss implications of overestimation for flood risk assessment and infrastructure design
+
+5. **Technical Writing Requirements**
+   - Include mathematical formulations with proper notation
+   - Use subscripts and superscripts correctly (e.g., λᵣ for L-moments, τᵣ for L-moment ratios)
+   - Provide step-by-step methodology sections
+   - Include validation and verification procedures
+   - Discuss limitations and assumptions
+
+6. **Results Presentation**
+   - Use tables for L-moment statistics and distribution parameters
+   - Create figures for L-moment ratio diagrams
+   - Present flood quantiles in clear tables with return periods
+   - Include comparison with other methods (e.g., method of moments, maximum likelihood)
+   - Show regionalization results if applicable
+
+7. **Software and Tools**
+   - Primary software: Python with `lmoments3` library for L-moments calculations and distribution fitting
+   - Supporting libraries: `pandas` for data handling, `numpy` for numerical operations, `matplotlib` for visualization
+   - Data format: CSV files with 'Value (mm)' column for precipitation data
+   - Both Annual Maximum Series (AMS) and Daily series are analyzed
+   - Provide code snippets or algorithms when appropriate
+   - Ensure reproducibility of results with proper documentation
+
+## Chapter Structure Guidelines
+
+The thesis follows a six-chapter structure:
+
+1. **Introduction Chapter**
+   - Context of flood frequency analysis
+   - Importance of accurate flood estimation
+   - Limitations of conventional methods
+   - Advantages of L-moments approach
+   - Research objectives and questions
+   - Significance of study
+   - Scope of study
+
+2. **Literature Review**
+   - Historical development of flood frequency analysis
+   - Evolution of L-moments methodology
+   - Applications in hydrology
+   - Recent advances in L-moments applications
+   - Comparison of different methodologies
+   - Critical review of existing studies
+
+3. **Methodology Chapter**
+   - Detailed L-moments theory
+   - Step-by-step analytical procedure
+   - Distribution selection criteria
+   - Goodness-of-fit testing
+   - Quantile estimation methods
+   - Data collection and preprocessing
+   - Software and tools used
+
+4. **Research Gap Chapter**
+   - Comprehensive identification of research gaps in L-moments flood frequency analysis
+   - Gaps in methodology application to tropical climates
+   - Limitations of existing studies using Annual Maximum Series (AMS) only
+   - Need for comparative analysis between AMS and daily data
+   - Gaps in distribution selection criteria
+   - Limitations in goodness-of-fit assessment methods
+   - Regional application gaps (specifically for Terengganu, Malaysia)
+   - Justification for the current research approach
+   - How this research addresses identified gaps
+   - Connection between research gaps and research objectives
+
+5. **Results and Discussion**
+   - Present L-moment statistics for both AMS and daily data
+   - Distribution fitting results
+   - Comparison of results between AMS and daily data
+   - Flood quantile estimates
+   - Quantification of overestimation bias between AM and daily approaches
+   - Comparison with other methods (if applicable)
+   - Interpretation of results
+   - Discussion of uncertainties
+   - Validation of findings
+
+6. **Conclusion**
+   - Summary of findings
+   - Contributions to the field
+   - Recommendations for practice
+   - Future research directions
+   - Limitations of the study
+
+7. **References**
+   - All references are stored centrally in `references/references.md`
+   - References are organized by topic categories (e.g., L-Moments, Probability Distributions, Malaysian Studies)
+   - Each chapter ends with a note: "*(See References chapter for complete reference list)*"
+   - The references file follows APA 7th edition format throughout
+
+## Code and Analysis Guidelines
+
+1. **Python Coding Standards**
+   - Use `lmoments3` library (imported as `lm`) for L-moments calculations
+   - Use `lmoments3.distr` module for distribution fitting
+   - Calculate L-moments using `lm.lmom_ratios(data, nmom=4)` to get L1, L2, T3 (L-skewness), T4 (L-kurtosis)
+   - Fit distributions using `distr.<distribution>.lmom_fit(data)` where distributions include: gum, nor, exp, gev, glo, gno, gpa, pe3, kap
+   - Handle invalid parameter estimates gracefully (catch ValueError exceptions)
+   - Use `pandas` for data reading: `pd.read_csv(file_path)['Value (mm)']`
+   - Use `dropna()` when calculating L-moments to handle missing values
+
+2. **Statistical Analysis Code**
+   - Use clear variable names related to hydrology (e.g., `annual_max_flow`, `return_period`, `l_moments`, `return_values`)
+   - Include comments explaining L-moments calculations and distribution fitting procedures
+   - Document all statistical tests and their interpretations
+   - Format parameter values to 4 decimal places for consistency
+   - Store results in structured formats (CSV files) with station names and numbers
+
+3. **Goodness-of-Fit Assessment**
+   - Calculate Mean Absolute Deviation Index (MADI): mean of absolute normalized differences
+   - Calculate Mean Squared Deviation Index (MSDI): mean of squared normalized differences
+   - Normalized differences: (observed - theoretical) / observed
+   - Use Gringorten plotting positions: (i - 0.44) / (n + 0.12) for quantile plots
+   - Transform plotting positions using: g_i = -ln(-ln(P_i)) for Gumbel-type plots
+   - Create quantile-quantile plots comparing theoretical and empirical quantiles
+
+4. **Return Period Calculations**
+   - Calculate exceedance probabilities: P = 1 - (1/T) where T is return period
+   - Use distribution's `ppf()` (percent point function) to calculate return values
+   - Use distribution's `cdf()` to calculate probability of exceedance for specific values
+   - Calculate return period from probability: T = 1/P
+   - Standard return periods: 2, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 years
+   - Plot return period vs return values with proper annotations
+
+5. **Data Handling**
+   - Address missing data using `dropna()` before L-moments calculations
+   - Check for outliers and their treatment
+   - Verify data quality and homogeneity
+   - Document data preprocessing steps
+   - Handle both Annual and Daily data series separately
+   - Organize data in folders: `Data/Annual/` and `Data/Daily/`
+   - Save analysis results in `Analysis Results/` subdirectories
+
+6. **Batch Processing**
+   - Loop through multiple stations/files for comprehensive analysis
+   - Store results in DataFrames for easy export to CSV
+   - Include station names and station numbers in results
+   - Handle file paths dynamically using `os.path.join()`
+   - Create output directories if they don't exist
+
+7. **Visualization**
+   - Use matplotlib for creating plots
+   - Create individual plots for each distribution comparison
+   - Save plots with descriptive filenames (e.g., `plotmadi_gev.png`)
+   - Use appropriate figure sizes (typically 10x6 or 10x4)
+   - Include legends, labels, titles, and grid for clarity
+   - Close figures after saving to free memory: `plt.close(fig)`
+
+8. **Overestimation Calculation**
+   - Calculate overestimation factor: `oe_factor = rp_am / (rp_daily / 365.25)`
+     - Where `rp_am` is return period in years from Annual Maxima analysis
+     - Where `rp_daily` is return period in days from daily data analysis
+   - Calculate overestimation percentage: `oe_percent = (oe_factor - 1) * 100`
+   - Store overestimation results alongside return period comparisons
+   - Present results in tables showing both AM and daily return periods with overestimation metrics
+   - Document the conversion factor (365.25 days per year) for daily to annual return period conversion
+
+## Quality Assurance
+
+1. **Accuracy Checks**
+   - Verify all mathematical formulas
+   - Cross-check L-moment calculations
+   - Validate distribution parameters
+   - Ensure consistency between text, tables, and figures
+
+2. **Clarity and Coherence**
+   - Use transition sentences between sections
+   - Maintain logical flow of arguments
+   - Ensure each paragraph has a clear purpose
+   - Connect methodology to results
+
+3. **Professional Presentation**
+   - Use consistent formatting for equations
+   - Number all figures and tables sequentially
+   - Provide clear captions for all visualizations
+   - Use appropriate units: mm for precipitation (as per data), years for return period
+   - Format numerical results consistently (typically 3-4 decimal places)
+
+## Specific Terminology to Use
+
+- "Annual Maximum Series (AMS)" not "annual maxima"
+- "Return period" not "recurrence interval" (unless specified otherwise)
+- "L-moments" not "L moments" or "Lmoments"
+- "Quantile" not "percentile" for flood estimates
+- "Distribution parameters" not "distribution coefficients"
+- "Goodness-of-fit" not "fit quality"
+
+## Avoid Common Mistakes
+
+1. Don't confuse L-moments with conventional moments
+2. Don't mix up L-skewness (τ₃) and L-kurtosis (τ₄) with conventional skewness and kurtosis
+3. Don't forget to discuss uncertainty and limitations
+4. Don't present results without proper interpretation
+5. Don't use informal language or colloquialisms
+6. Don't skip validation steps
+7. Don't ignore regional considerations if applicable
+8. Don't forget to handle exceptions when fitting distributions (some distributions may be invalid for certain data)
+9. Don't use hardcoded file paths; use relative paths or environment variables
+10. Don't forget to close matplotlib figures after saving to prevent memory issues
+11. Don't confuse exceedance probability with non-exceedance probability
+12. Don't forget to document which distribution was selected as best fit based on MADI/MSDI criteria
+13. Don't add in-text citations without also adding the full reference to `references/references.md`
+14. Don't duplicate references in `references/references.md` - check before adding
+15. Don't use references that are not in the central `references/references.md` file
+

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data files (if large)
+*.csv
+*.xlsx
+*.xls
+!**/Data/**/*.csv
+
+# Figures (if large, uncomment if needed)
+# *.png
+# *.jpg
+# *.pdf
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*~
+
+# Analysis results (optional - uncomment if you don't want to track results)
+# Results/
+# Analysis Results/
+
+# PDFs (if large)
+# *.pdf
