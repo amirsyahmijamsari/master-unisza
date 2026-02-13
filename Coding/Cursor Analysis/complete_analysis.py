@@ -570,24 +570,53 @@ def create_figures(annual_results_dir, daily_results_dir, oe_df, figures_dir):
     plt.close()
     print("  Created Figure 5.4: MADI Comparison")
     
-    # Figure 5.5: Return Period Curves
-    fig, ax = plt.subplots(figsize=(12, 8))
+    # Figure 5.5: Return Period Curves Comparison (AM vs Daily)
+    # Load daily return period data
+    daily_obj3 = pd.read_csv(os.path.join(daily_results_dir, 'obj3_return_period_analysis.csv'))
     
-    for station_id in annual_obj3['Station_ID'].unique()[:5]:
-        station_data = annual_obj3[annual_obj3['Station_ID'] == station_id]
-        ax.plot(station_data['Return_Period_Years'], station_data['Return_Value_mm'], 
-                'o-', label=station_id, linewidth=2, markersize=6)
+    # Select representative stations based on AM 100-year return values
+    rp100_data = annual_obj3[annual_obj3['Return_Period_Years'] == 100].sort_values('Return_Value_mm')
     
-    ax.set_xlabel('Return Period (Years)', fontsize=12)
-    ax.set_ylabel('Return Value (mm)', fontsize=12)
-    ax.set_title('Return Period Curves (Selected Stations)', fontsize=14)
-    ax.legend()
-    ax.grid(True, alpha=0.3)
-    ax.set_xscale('log')
+    # Select 3 representative stations: lowest, median, and highest
+    n_stations = len(rp100_data)
+    selected_indices = [
+        0,  # Lowest
+        n_stations // 2,  # Median
+        n_stations - 1  # Highest
+    ]
+    selected_stations = rp100_data.iloc[selected_indices]['Station_ID'].tolist()
+    
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+    
+    for idx, station_id in enumerate(selected_stations):
+        ax = axes[idx]
+        
+        # Annual Maximum data
+        am_data = annual_obj3[annual_obj3['Station_ID'] == station_id]
+        station_name = am_data['Station_Name'].iloc[0]
+        
+        # Daily data
+        daily_data = daily_obj3[daily_obj3['Station_ID'] == station_id]
+        
+        # Plot both curves
+        ax.plot(am_data['Return_Period_Years'], am_data['Return_Value_mm'], 
+                'o-', label='Annual Maximum', linewidth=2, markersize=6, color='blue', alpha=0.8)
+        ax.plot(daily_data['Return_Period_Years'], daily_data['Return_Value_mm'], 
+                's-', label='Daily Rainfall', linewidth=2, markersize=6, color='red', alpha=0.8)
+        
+        ax.set_xlabel('Return Period (Years)', fontsize=11)
+        ax.set_ylabel('Return Value (mm)', fontsize=11)
+        ax.set_title(f'{station_id}\n{station_name[:35]}', fontsize=10)
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3)
+        ax.set_xscale('log')
+    
+    plt.suptitle('Comparison of Return Period Curves: Annual Maximum vs Daily Rainfall', 
+                 fontsize=14, y=1.02)
     plt.tight_layout()
-    plt.savefig(os.path.join(figures_dir, 'Figure_5_5_Return_Period_Curves.png'), dpi=150)
+    plt.savefig(os.path.join(figures_dir, 'Figure_5_5_Return_Period_Curves.png'), dpi=150, bbox_inches='tight')
     plt.close()
-    print("  Created Figure 5.5: Return Period Curves")
+    print("  Created Figure 5.5: Return Period Curves Comparison (AM vs Daily)")
     
     # Figure 5.6: Return Values Heatmap
     pivot = annual_obj3.pivot(index='Station_ID', columns='Return_Period_Years', values='Return_Value_mm')

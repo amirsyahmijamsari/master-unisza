@@ -199,9 +199,9 @@ The Kappa distribution emerged as the best-fitting distribution overall, particu
 
 *Note: All daily rainfall series use the Kappa (KAP) distribution. Return values are calculated for daily rainfall data (≥1mm) and represent the expected daily rainfall amount for the specified return period.*
 
-![Figure 5.5: Return Period Curves](../Coding/Cursor%20Analysis/Figures/Figure_5_5_Return_Period_Curves.png)
+![Figure 5.5: Return Period Curves Comparison](../Coding/Cursor%20Analysis/Figures/Figure_5_5_Return_Period_Curves.png)
 
-**Figure 5.5:** Return Period Curves for selected stations.
+**Figure 5.5:** Comparison of Return Period Curves: Annual Maximum vs Daily Rainfall for three representative stations. The stations were selected to represent the range of 100-year return values in the Annual Maximum Series: (a) lowest (0670211RF: Rumah Pam Padang Landak, 365.5 mm), (b) median (0620081RF: Rumah Pam Nyatoh, 544.8 mm), and (c) highest (0680071RF: Balai Polis Kg. Dura, 1124.9 mm). The figure demonstrates the substantial difference between Annual Maximum and Daily Rainfall approaches across all return periods. For all three stations, the Annual Maximum curves show significantly higher return values compared to Daily Rainfall curves, reflecting the different frequency contexts and the overestimation bias inherent in the Annual Maximum approach for tropical regions.
 
 ![Figure 5.6: Return Values Heatmap](../Coding/Cursor%20Analysis/Figures/Figure_5_6_Return_Values_Heatmap.png)
 
