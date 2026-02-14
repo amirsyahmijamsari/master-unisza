@@ -86,9 +86,9 @@
 
 **Spatial Variability:**
 - Distinct patterns across Terengganu stations
-- Coastal stations show higher return values
-- Station 0680071RF (Balai Polis Kg. Dura): Highest 100-year value (1124.9 mm)
+- Certain stations show higher return values (e.g., 0680071RF: Balai Polis Kg. Dura with 1124.9 mm)
 - Clear gradient from low to high return periods (2-100 years)
+- Regional differences in extreme rainfall characteristics
 
 ---
 

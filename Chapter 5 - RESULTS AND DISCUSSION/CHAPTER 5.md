@@ -717,7 +717,7 @@ The following tables present estimated parameters for all nine distributions fit
 **Figure 5.6:** Heatmap visualization of return values (mm) for Annual Maximum Series across all twenty stations and multiple return periods (2, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, and 100 years). The heatmap uses a color gradient (yellow to orange to red) where darker colors represent higher return values. Each cell represents the estimated return value for a specific station and return period combination, providing a comprehensive spatial and temporal overview of extreme rainfall estimates across Terengganu.
 
 **Key Findings:**
-- **Spatial Patterns**: The heatmap reveals distinct spatial variability in return values across stations. Stations with higher return values (darker red colors) are concentrated in certain regions, particularly coastal areas such as station 0680071RF (Balai Polis Kg. Dura) which shows the highest 100-year return value of 1124.9 mm.
+- **Spatial Patterns**: The heatmap reveals distinct spatial variability in return values across stations. Stations with higher return values (darker red colors) are concentrated in certain regions, such as station 0680071RF (Balai Polis Kg. Dura) which shows the highest 100-year return value of 1124.9 mm.
 - **Return Period Gradient**: As expected, return values increase with return period across all stations, creating a clear gradient from left (shorter return periods) to right (longer return periods) in the heatmap.
 - **100-Year Return Values Range**: The 100-year return values for Annual Maximum Series range from 365.5 mm (station 0670211RF: Rumah Pam Padang Landak) to 1124.9 mm (station 0680071RF: Balai Polis Kg. Dura), representing a 3.1-fold variation across the study area.
 - **Station-Specific Patterns**: Some stations show consistently high return values across all return periods (e.g., 0680071RF, 0700011RF), while others maintain relatively moderate values (e.g., 0670211RF, 0680081RF), indicating regional differences in extreme rainfall characteristics.
@@ -809,7 +809,7 @@ This supports the use of flexible, four-parameter distributions for tropical rai
 
 ### 5.6.3 Return Period Analysis (Research Question 3)
 
-Return values were successfully calculated for all stations. The results show significant variation across stations, with coastal stations exhibiting higher return values due to monsoon influences.
+Return values were successfully calculated for all stations. The results show significant variation across stations, with certain stations exhibiting higher return values, which may be influenced by regional factors including monsoon patterns and local topography.
 
 ### 5.6.4 Overestimation Quantification (Research Question 4)
 
