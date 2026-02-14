@@ -1,0 +1,236 @@
+**Table 5.X: Estimated Parameters for All Distributions (Daily Rainfall Series)**
+
+
+### GUM Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) |
+|------------|--------------|---------------|---------------|
+| 0551621RF | Stor JPS Kuala Terengganu | 9.28 | 16.42 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 9.59 | 18.55 |
+| 0600011RF | JPS Bukit Besi | 9.06 | 17.65 |
+| 0600131RF | JPS Dungun | 9.92 | 17.48 |
+| 0600141RF | Rumah Pam Paya Ketam | 9.80 | 16.83 |
+| 0600151RF | JPS Kuala Dungun | 10.01 | 16.62 |
+| 0620081RF | Rumah Pam Nyatoh | 10.43 | 18.11 |
+| 0630011RF | JPS Kemaman | 9.11 | 16.94 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 10.30 | 17.80 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 9.12 | 17.52 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 9.70 | 17.48 |
+| 0670211RF | Rumah Pam Padang Landak | 10.04 | 17.62 |
+| 0670221RF | JPS Kuala Berang | 10.05 | 17.85 |
+| 0670251RF | Rumah Pam Jerangau | 10.51 | 18.65 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 10.17 | 18.76 |
+| 0680071RF | Balai Polis Kg. Dura | 11.77 | 20.19 |
+| 0680081RF | Rumah Pam Rantau Petronas | 10.71 | 18.57 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 10.74 | 19.74 |
+| 0700011RF | Rumah Pam Besut | 9.97 | 18.56 |
+| 0700131RF | JPS Jertih, Besut | 9.57 | 18.32 |
+
+
+### NOR Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) |
+|------------|--------------|---------------|---------------|
+| 0551621RF | Stor JPS Kuala Terengganu | 18.76 | 20.18 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 20.29 | 22.80 |
+| 0600011RF | JPS Bukit Besi | 19.25 | 21.68 |
+| 0600131RF | JPS Dungun | 20.01 | 21.48 |
+| 0600141RF | Rumah Pam Paya Ketam | 19.52 | 20.68 |
+| 0600151RF | JPS Kuala Dungun | 19.61 | 20.42 |
+| 0620081RF | Rumah Pam Nyatoh | 20.88 | 22.25 |
+| 0630011RF | JPS Kemaman | 18.89 | 20.82 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 20.57 | 21.87 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 19.23 | 21.52 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 19.78 | 21.47 |
+| 0670211RF | Rumah Pam Padang Landak | 20.21 | 21.65 |
+| 0670221RF | JPS Kuala Berang | 20.35 | 21.93 |
+| 0670251RF | Rumah Pam Jerangau | 21.28 | 22.91 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 20.99 | 23.04 |
+| 0680071RF | Balai Polis Kg. Dura | 23.43 | 24.80 |
+| 0680081RF | Rumah Pam Rantau Petronas | 21.43 | 22.82 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 22.13 | 24.26 |
+| 0700011RF | Rumah Pam Besut | 20.68 | 22.80 |
+| 0700131RF | JPS Jertih, Besut | 20.14 | 22.50 |
+
+
+### EXP Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) |
+|------------|--------------|---------------|---------------|
+| 0551621RF | Stor JPS Kuala Terengganu | -4.00 | 22.77 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | -5.43 | 25.72 |
+| 0600011RF | JPS Bukit Besi | -5.22 | 24.47 |
+| 0600131RF | JPS Dungun | -4.23 | 24.23 |
+| 0600141RF | Rumah Pam Paya Ketam | -3.82 | 23.33 |
+| 0600151RF | JPS Kuala Dungun | -3.44 | 23.04 |
+| 0620081RF | Rumah Pam Nyatoh | -4.23 | 25.11 |
+| 0630011RF | JPS Kemaman | -4.60 | 23.49 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | -4.10 | 24.68 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | -5.05 | 24.29 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | -4.44 | 24.23 |
+| 0670211RF | Rumah Pam Padang Landak | -4.22 | 24.43 |
+| 0670221RF | JPS Kuala Berang | -4.40 | 24.75 |
+| 0670251RF | Rumah Pam Jerangau | -4.58 | 25.85 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | -5.01 | 26.00 |
+| 0680071RF | Balai Polis Kg. Dura | -4.56 | 27.98 |
+| 0680081RF | Rumah Pam Rantau Petronas | -4.32 | 25.75 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | -5.24 | 27.37 |
+| 0700011RF | Rumah Pam Besut | -5.05 | 25.73 |
+| 0700131RF | JPS Jertih, Besut | -5.25 | 25.39 |
+
+
+### GEV Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Shape (k) |
+|------------|--------------|---------------|---------------|-----------|
+| 0551621RF | Stor JPS Kuala Terengganu | 6.87 | 8.41 | - |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 6.74 | 8.51 | - |
+| 0600011RF | JPS Bukit Besi | 6.35 | 8.06 | - |
+| 0600131RF | JPS Dungun | 7.35 | 8.97 | - |
+| 0600141RF | Rumah Pam Paya Ketam | 7.36 | 8.84 | - |
+| 0600151RF | JPS Kuala Dungun | 7.69 | 9.28 | - |
+| 0620081RF | Rumah Pam Nyatoh | 7.78 | 9.39 | - |
+| 0630011RF | JPS Kemaman | 6.55 | 8.18 | - |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 7.72 | 9.33 | - |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 6.44 | 8.10 | - |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 7.11 | 8.78 | - |
+| 0670211RF | Rumah Pam Padang Landak | 7.47 | 9.17 | - |
+| 0670221RF | JPS Kuala Berang | 7.44 | 9.22 | - |
+| 0670251RF | Rumah Pam Jerangau | 7.75 | 9.41 | - |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 7.34 | 9.04 | - |
+| 0680071RF | Balai Polis Kg. Dura | 8.87 | 10.78 | - |
+| 0680081RF | Rumah Pam Rantau Petronas | 8.01 | 9.69 | - |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 7.76 | 9.53 | - |
+| 0700011RF | Rumah Pam Besut | 7.14 | 8.77 | - |
+| 0700131RF | JPS Jertih, Besut | 6.75 | 8.35 | - |
+
+
+### GLO Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Shape (k) |
+|------------|--------------|---------------|---------------|-----------|
+| 0551621RF | Stor JPS Kuala Terengganu | 10.42 | 7.17 | -0.5052 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 10.35 | 7.44 | -0.5446 |
+| 0600011RF | JPS Bukit Besi | 9.77 | 7.05 | -0.5462 |
+| 0600131RF | JPS Dungun | 11.14 | 7.64 | -0.5045 |
+| 0600141RF | Rumah Pam Paya Ketam | 11.09 | 7.49 | -0.4957 |
+| 0600151RF | JPS Kuala Dungun | 11.60 | 7.75 | -0.4715 |
+| 0620081RF | Rumah Pam Nyatoh | 11.75 | 7.99 | -0.5005 |
+| 0630011RF | JPS Kemaman | 10.02 | 7.07 | -0.5269 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 11.66 | 7.91 | -0.4964 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 9.87 | 7.07 | -0.5418 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 10.82 | 7.52 | -0.5121 |
+| 0670211RF | Rumah Pam Padang Landak | 11.35 | 7.79 | -0.4990 |
+| 0670221RF | JPS Kuala Berang | 11.34 | 7.85 | -0.5017 |
+| 0670251RF | Rumah Pam Jerangau | 11.73 | 8.05 | -0.5105 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 11.17 | 7.82 | -0.5273 |
+| 0680071RF | Balai Polis Kg. Dura | 13.42 | 9.10 | -0.4892 |
+| 0680081RF | Rumah Pam Rantau Petronas | 12.10 | 8.23 | -0.4980 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 11.80 | 8.24 | -0.5266 |
+| 0700011RF | Rumah Pam Besut | 10.86 | 7.62 | -0.5344 |
+| 0700131RF | JPS Jertih, Besut | 10.29 | 7.31 | -0.5470 |
+
+
+### GNO Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Shape (k) |
+|------------|--------------|---------------|---------------|-----------|
+| 0551621RF | Stor JPS Kuala Terengganu | 9.56 | 12.07 | -1.1058 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 9.33 | 12.35 | -1.2070 |
+| 0600011RF | JPS Bukit Besi | 8.80 | 11.70 | -1.2112 |
+| 0600131RF | JPS Dungun | 10.22 | 12.87 | -1.1039 |
+| 0600141RF | Rumah Pam Paya Ketam | 10.22 | 12.65 | -1.0817 |
+| 0600151RF | JPS Kuala Dungun | 10.77 | 13.18 | -1.0220 |
+| 0620081RF | Rumah Pam Nyatoh | 10.80 | 13.47 | -1.0938 |
+| 0630011RF | JPS Kemaman | 9.10 | 11.81 | -1.1610 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 10.73 | 13.36 | -1.0836 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 8.91 | 11.75 | -1.1998 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 9.89 | 12.64 | -1.1230 |
+| 0670211RF | Rumah Pam Padang Landak | 10.43 | 13.15 | -1.0900 |
+| 0670221RF | JPS Kuala Berang | 10.40 | 13.23 | -1.0968 |
+| 0670251RF | Rumah Pam Jerangau | 10.74 | 13.54 | -1.1191 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 10.15 | 13.06 | -1.1621 |
+| 0680071RF | Balai Polis Kg. Dura | 12.38 | 15.40 | -1.0657 |
+| 0680081RF | Rumah Pam Rantau Petronas | 11.13 | 13.89 | -1.0875 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 10.73 | 13.78 | -1.1602 |
+| 0700011RF | Rumah Pam Besut | 9.85 | 12.69 | -1.1803 |
+| 0700131RF | JPS Jertih, Besut | 9.28 | 12.11 | -1.2133 |
+
+
+### GPA Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Shape (c) |
+|------------|--------------|---------------|---------------|-----------|
+| 0551621RF | Stor JPS Kuala Terengganu | -0.10 | 12.40 | 0.3426 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | -0.15 | 12.06 | 0.4103 |
+| 0600011RF | JPS Bukit Besi | -0.16 | 11.40 | 0.4130 |
+| 0600131RF | JPS Dungun | -0.09 | 13.24 | 0.3413 |
+| 0600141RF | Rumah Pam Paya Ketam | -0.02 | 13.17 | 0.3256 |
+| 0600151RF | JPS Kuala Dungun | -0.19 | 14.22 | 0.2817 |
+| 0620081RF | Rumah Pam Nyatoh | -0.03 | 13.93 | 0.3342 |
+| 0630011RF | JPS Kemaman | -0.14 | 11.79 | 0.3803 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | -0.07 | 13.89 | 0.3269 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | -0.13 | 11.51 | 0.4057 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | -0.15 | 12.86 | 0.3546 |
+| 0670211RF | Rumah Pam Padang Landak | -0.17 | 13.63 | 0.3315 |
+| 0670221RF | JPS Kuala Berang | -0.23 | 13.66 | 0.3363 |
+| 0670251RF | Rumah Pam Jerangau | -0.03 | 13.81 | 0.3519 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | -0.06 | 13.03 | 0.3811 |
+| 0680071RF | Balai Polis Kg. Dura | -0.16 | 16.18 | 0.3141 |
+| 0680081RF | Rumah Pam Rantau Petronas | -0.07 | 14.41 | 0.3297 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | -0.04 | 13.75 | 0.3798 |
+| 0700011RF | Rumah Pam Besut | 0.01 | 12.55 | 0.3931 |
+| 0700131RF | JPS Jertih, Besut | 0.01 | 11.79 | 0.4143 |
+
+
+### PE3 Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Skewness (skew) |
+|------------|--------------|---------------|---------------|-----------------|
+| 0551621RF | Stor JPS Kuala Terengganu | 18.76 | 26.32 | 3.1172 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 20.29 | 31.01 | 3.4136 |
+| 0600011RF | JPS Bukit Besi | 19.25 | 29.55 | 3.4263 |
+| 0600131RF | JPS Dungun | 20.01 | 28.00 | 3.1118 |
+| 0600141RF | Rumah Pam Paya Ketam | 19.52 | 26.72 | 3.0483 |
+| 0600151RF | JPS Kuala Dungun | 19.61 | 25.77 | 2.8789 |
+| 0620081RF | Rumah Pam Nyatoh | 20.88 | 28.89 | 3.0828 |
+| 0630011RF | JPS Kemaman | 18.89 | 27.78 | 3.2777 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 20.57 | 28.28 | 3.0536 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 19.23 | 29.19 | 3.3922 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 19.78 | 28.20 | 3.1670 |
+| 0670211RF | Rumah Pam Padang Landak | 20.21 | 28.07 | 3.0719 |
+| 0670221RF | JPS Kuala Berang | 20.35 | 28.51 | 3.0914 |
+| 0670251RF | Rumah Pam Jerangau | 21.28 | 30.05 | 3.1558 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 20.99 | 30.76 | 3.2810 |
+| 0680071RF | Balai Polis Kg. Dura | 23.43 | 31.84 | 3.0026 |
+| 0680081RF | Rumah Pam Rantau Petronas | 21.43 | 29.55 | 3.0647 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 22.13 | 32.36 | 3.2753 |
+| 0700011RF | Rumah Pam Besut | 20.68 | 30.68 | 3.3345 |
+| 0700131RF | JPS Jertih, Besut | 20.14 | 30.69 | 3.4324 |
+
+
+### KAP Distribution
+
+| Station ID | Station Name | Location (loc) | Scale (scale) | Shape 1 (k) | Shape 2 (h) |
+|------------|--------------|---------------|---------------|-------------|-------------|
+| 0551621RF | Stor JPS Kuala Terengganu | -5.66 | 15.93 | -0.2596 | 1.4743 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | -7.78 | 16.44 | -0.3132 | 1.6412 |
+| 0600011RF | JPS Bukit Besi | -8.83 | 16.38 | -0.2993 | 1.7428 |
+| 0600131RF | JPS Dungun | -5.10 | 16.42 | -0.2701 | 1.4105 |
+| 0600141RF | Rumah Pam Paya Ketam | -5.07 | 16.46 | -0.2509 | 1.4142 |
+| 0600151RF | JPS Kuala Dungun | -6.34 | 18.50 | -0.1899 | 1.4547 |
+| 0620081RF | Rumah Pam Nyatoh | -3.57 | 16.17 | -0.2846 | 1.2879 |
+| 0630011RF | JPS Kemaman | -8.27 | 16.72 | -0.2675 | 1.6823 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | -5.04 | 17.11 | -0.2571 | 1.3901 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | -8.80 | 16.56 | -0.2908 | 1.7364 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | -5.18 | 15.99 | -0.2834 | 1.4232 |
+| 0670211RF | Rumah Pam Padang Landak | -4.98 | 16.72 | -0.2632 | 1.3860 |
+| 0670221RF | JPS Kuala Berang | -5.06 | 16.74 | -0.2688 | 1.3864 |
+| 0670251RF | Rumah Pam Jerangau | -4.82 | 16.79 | -0.2878 | 1.3815 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | -3.74 | 15.20 | -0.3319 | 1.3190 |
+| 0680071RF | Balai Polis Kg. Dura | -4.09 | 18.75 | -0.2643 | 1.2757 |
+| 0680081RF | Rumah Pam Rantau Petronas | -5.80 | 18.11 | -0.2532 | 1.4271 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | -5.64 | 17.09 | -0.3101 | 1.4401 |
+| 0700011RF | Rumah Pam Besut | -5.85 | 15.98 | -0.3165 | 1.4958 |
+| 0700131RF | JPS Jertih, Besut | -5.64 | 14.99 | -0.3399 | 1.5092 |
+
