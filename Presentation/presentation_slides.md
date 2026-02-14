@@ -42,6 +42,8 @@
 
 ## Slide 5: Key Finding 1 - Distribution Selection
 
+![Figure 5.3: Best Distribution Summary](../Coding/Cursor%20Analysis/Figures/Figure_5_3_Best_Distribution_Summary.png)
+
 **4-Parameter Kappa (K4D) Distribution:**
 - **Daily Rainfall**: Best fit for **100%** of stations (20/20)
 - **Annual Maximum**: Best fit for **40%** of stations (8/20)
@@ -51,19 +53,23 @@
 
 ## Slide 6: Key Finding 2 - L-Moment Characteristics
 
+![Figure 5.1: L-Moment Ratio Diagram](../Coding/Cursor%20Analysis/Figures/Figure_5_1_LMoments_Ratio_Diagram.png)
+
 **Daily Rainfall Series:**
 - Consistently high L-skewness (τ₃ ≈ 0.47-0.55)
-- Tight clustering in L-moment ratio diagram
+- Tight clustering in L-moment ratio diagram (red squares)
 - More right-skewed distributions than annual maxima
 
 **Annual Maximum Series:**
 - Variable L-skewness (τ₃ ≈ 0.02-0.47)
-- Greater dispersion across distribution types
+- Greater dispersion across distribution types (blue circles)
 - Less consistent patterns across stations
 
 ---
 
 ## Slide 7: Key Finding 3 - Return Period Analysis
+
+![Figure 5.5: Return Period Curves](../Coding/Cursor%20Analysis/Figures/Figure_5_5_Return_Period_Curves.png)
 
 **100-Year Return Values:**
 - **Annual Maximum Series**: 365.5 - 1124.9 mm
@@ -74,7 +80,21 @@
 
 ---
 
-## Slide 8: Key Finding 4 - Overestimation Quantification
+## Slide 8: Spatial Patterns in Return Values
+
+![Figure 5.6: Return Values Heatmap](../Coding/Cursor%20Analysis/Figures/Figure_5_6_Return_Values_Heatmap.png)
+
+**Spatial Variability:**
+- Distinct patterns across Terengganu stations
+- Coastal stations show higher return values
+- Station 0680071RF (Balai Polis Kg. Dura): Highest 100-year value (1124.9 mm)
+- Clear gradient from low to high return periods (2-100 years)
+
+---
+
+## Slide 9: Key Finding 4 - Overestimation Quantification
+
+![Figure 5.7: Overestimation by Station](../Coding/Cursor%20Analysis/Figures/Figure_5_7_Overestimation_by_Station.png)
 
 **At 99th Percentile (Extreme Events):**
 - **Mean Overestimation Factor**: **8.50x**
@@ -85,7 +105,7 @@
 
 ---
 
-## Slide 9: Implications
+## Slide 10: Implications
 
 **For Flood Risk Assessment:**
 - Annual Maxima approach significantly underestimates extreme event frequency
@@ -99,7 +119,7 @@
 
 ---
 
-## Slide 10: Contributions to SDGs
+## Slide 11: Contributions to SDGs
 
 This research contributes to:
 
@@ -109,7 +129,7 @@ This research contributes to:
 
 ---
 
-## Slide 11: Conclusions
+## Slide 12: Conclusions
 
 1. **L-moments method** is highly effective for tropical rainfall analysis
 2. **4-Parameter Kappa distribution** is recommended for Terengganu and similar tropical regions
@@ -119,7 +139,7 @@ This research contributes to:
 
 ---
 
-## Slide 12: Recommendations
+## Slide 13: Recommendations
 
 **For Practitioners:**
 - Use daily rainfall data for flood frequency analysis in tropical regions
@@ -133,7 +153,7 @@ This research contributes to:
 
 ---
 
-## Slide 13: Thank You
+## Slide 14: Thank You
 
 **Questions & Discussion**
 
