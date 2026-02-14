@@ -38,25 +38,29 @@ The superior performance of the 4-Parameter Kappa distribution for daily data su
 
 Return values were successfully calculated for return periods ranging from 2 to 100 years:
 
-- **100-year return values** ranged from approximately 390 mm to 775 mm across stations.
+- **100-year return values for Annual Maximum Series** ranged from 365.5 mm to 1124.9 mm across stations, representing a 3.1-fold variation.
 
-- **Spatial variation**: Coastal stations exhibited higher return values, reflecting the influence of the Northeast Monsoon system.
+- **100-year return values for Daily Rainfall Series** ranged from 129.9 mm to 169.3 mm, which are 2.8 to 6.6 times lower than their Annual Maximum counterparts.
+
+- **Spatial variation**: Coastal stations exhibited higher return values, reflecting the influence of the Northeast Monsoon system. Station 0680071RF (Balai Polis Kg. Dura) showed the highest 100-year return value of 1124.9 mm for Annual Maximum Series.
 
 - **Distribution impact**: The choice of distribution significantly affected extreme value estimates, particularly at longer return periods.
 
-These findings provide valuable design rainfall estimates for infrastructure planning in Terengganu, though they highlight the importance of appropriate distribution selection for accurate estimation.
+These findings provide valuable design rainfall estimates for infrastructure planning in Terengganu, though they highlight the importance of appropriate distribution selection for accurate estimation and demonstrate the substantial differences between Annual Maximum and Daily Rainfall approaches.
 
 ### 6.2.4 Objective 4: Overestimation Quantification
 
-The comparison between Annual Maxima and daily data approaches revealed substantial overestimation:
+The comparison between Annual Maxima and daily data approaches revealed substantial overestimation at the 99th percentile, which represents extreme rainfall events critical for flood risk assessment:
 
-- **Mean Overestimation Factor**: 3.75x at the 95th percentile
+- **Mean Overestimation Factor**: 8.50x at the 99th percentile
 
-- **Range**: 1.51x to 7.63x across stations
+- **Range**: 7.14x to 9.99x across all 20 stations
 
-- **Mean Overestimation Percentage**: 275.3%
+- **Mean Overestimation Percentage**: 750.0%
 
-This finding indicates that the Annual Maxima approach, when applied to tropical rainfall data, suggests that extreme events are substantially rarer than they actually are. This overestimation has significant implications for flood risk assessment and infrastructure design in tropical regions.
+- **Standard Deviation**: 0.91x, indicating consistent overestimation pattern across stations
+
+This finding indicates that the Annual Maxima approach, when applied to tropical rainfall data, significantly underestimates the frequency of extreme events. Events that AM analysis suggests occur approximately once per year may actually occur approximately once every 43 days based on daily data analysis. This substantial overestimation has critical implications for flood risk assessment and infrastructure design in tropical regions, particularly for extreme events that are most relevant for flood management.
 
 ---
 
@@ -74,7 +78,7 @@ The 4-Parameter Kappa (K4D) distribution is recommended as the primary distribut
 
 ### 6.3.3 Limitations of Annual Maxima Approach
 
-The Annual Maxima approach, while widely used and computationally convenient, significantly overestimates return periods when applied to tropical rainfall data. The mean overestimation factor of 3.75x indicates that extreme events may occur approximately 3.75 times more frequently than AM-based estimates suggest. This finding supports the concerns raised by Volpi et al. (2019) regarding data decimation in frequency analysis.
+The Annual Maxima approach, while widely used and computationally convenient, significantly overestimates return periods when applied to tropical rainfall data. The mean overestimation factor of 8.50x at the 99th percentile indicates that extreme events may occur approximately 8.50 times more frequently than AM-based estimates suggest. This finding supports the concerns raised by Volpi et al. (2019) regarding data decimation in frequency analysis and demonstrates that the bias is particularly pronounced for extreme events, which are of greatest concern for flood risk management.
 
 ### 6.3.4 Importance of Daily Data Analysis
 
@@ -148,7 +152,7 @@ Based on the findings of this research, the following recommendations are made f
 
 2. **Distribution Selection**: Use the 4-Parameter Kappa (K4D) distribution as the primary candidate for rainfall frequency analysis in Malaysia. If computational limitations exist, the Generalized Logistic (GLO) or Generalized Extreme Value (GEV) distributions are suitable alternatives.
 
-3. **Overestimation Adjustment**: Apply an adjustment factor to AM-based return period estimates when designing for tropical conditions. A factor of 3 to 4 based on this study's findings may be appropriate for Terengganu.
+3. **Overestimation Adjustment**: Apply an adjustment factor to AM-based return period estimates when designing for tropical conditions. For extreme events (99th percentile), a factor of approximately 8.5x based on this study's findings should be considered for Terengganu. However, practitioners should conduct site-specific analysis as overestimation factors may vary by location and event magnitude.
 
 ### 6.6.2 For Policy Makers
 
@@ -208,7 +212,7 @@ Explore the integration of machine learning methods with L-moments for improved 
 
 ## 6.8 Concluding Remarks
 
-This research has demonstrated the applicability of L-moments for flood frequency analysis in tropical Malaysia and has quantified the substantial overestimation that occurs when traditional Annual Maxima methods are applied to tropical rainfall data. The key finding—that AM-based return periods overestimate by an average factor of 3.75x—has significant implications for flood risk management and infrastructure design in tropical regions.
+This research has demonstrated the applicability of L-moments for flood frequency analysis in tropical Malaysia and has quantified the substantial overestimation that occurs when traditional Annual Maxima methods are applied to tropical rainfall data. The key finding—that AM-based return periods overestimate by an average factor of 8.50x at the 99th percentile—has critical implications for flood risk management and infrastructure design in tropical regions, particularly for extreme events that trigger significant flooding.
 
 The results support the call by Volpi et al. (2019) to "save hydrological observations" by using complete time-series analysis rather than decimating data to annual maxima. In tropical climates like Malaysia, where multiple extreme events occur within each year, the traditional AM approach discards valuable information that is essential for accurate risk assessment.
 
