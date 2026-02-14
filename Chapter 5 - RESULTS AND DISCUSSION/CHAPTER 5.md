@@ -95,7 +95,7 @@ Following the calculation of L-moments, distribution parameters were estimated f
 
 The estimated parameters for the best-fitting distributions (identified through MADI/MSDI goodness-of-fit testing) are presented in Tables 5.5 and 5.6. These parameters were estimated using the method of L-moments as described in Chapter 3.
 
-**Table 5.5: Estimated Parameters for Best-Fitting Distributions (Annual Maximum Series)**
+**Table 5.3: Estimated Parameters for Best-Fitting Distributions (Annual Maximum Series)**
 
 | Station ID | Station Name | Distribution | Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4 |
 |------------|--------------|-------------|-------------|-------------|-------------|-------------|
@@ -122,7 +122,7 @@ The estimated parameters for the best-fitting distributions (identified through 
 
 *Note: Parameter notation: loc = location parameter, scale = scale parameter, k = shape parameter (for GEV, GLO, GNO, K4D), h = second shape parameter (4-Parameter Kappa distribution only), skew = skewness parameter (Pearson Type III), c = shape parameter (Generalized Pareto). For GEV distribution at station 0580041RF, the shape parameter k approaches zero, indicating a Gumbel-like distribution.*
 
-**Table 5.6: Estimated Parameters for 4-Parameter Kappa Distribution (Daily Rainfall Series)**
+**Table 5.4: Estimated Parameters for 4-Parameter Kappa Distribution (Daily Rainfall Series)**
 
 | Station ID | Station Name | Location (loc) | Scale (scale) | Shape 1 (k) | Shape 2 (h) |
 |------------|--------------|---------------|---------------|-------------|-------------|
@@ -153,11 +153,11 @@ The estimated parameters for the best-fitting distributions (identified through 
 
 The following tables present estimated parameters for all nine distributions fitted to both Annual Maximum Series and Daily Rainfall Series data. These comprehensive tables provide complete parameter information for all distributions, allowing for comparison and reference. Parameters were estimated using the method of L-moments as described in Chapter 3.
 
-**Table 5.9: Estimated Parameters for All Distributions (Annual Maximum Series)**
+**Table 5.5: Estimated Parameters for All Distributions (Annual Maximum Series)**
 
 ### 5.3.1 Best-Fitting Distributions
 
-**Table 5.3: Best-Fitting Distributions for Annual Maximum Series**
+**Table 5.6: Best-Fitting Distributions for Annual Maximum Series**
 
 | Station ID | Best Distribution | MADI | MSDI |
 |------------|-------------------|------|------|
@@ -182,7 +182,7 @@ The following tables present estimated parameters for all nine distributions fit
 | 0700011RF | GLO | 0.0735 | 0.0160 |
 | 0700131RF | GPA | 0.0549 | 0.0049 |
 
-**Table 5.4: Best-Fitting Distributions for Daily Rainfall Series**
+**Table 5.7: Best-Fitting Distributions for Daily Rainfall Series**
 
 | Station ID | Best Distribution | MADI | MSDI |
 |------------|-------------------|------|------|
@@ -192,20 +192,7 @@ The following tables present estimated parameters for all nine distributions fit
 
 ![Figure 5.3: Best Distribution Summary](../Coding/Cursor%20Analysis/Figures/Figure_5_3_Best_Distribution_Summary.png)
 
-**Figure 5.3:** Distribution of best-fitting models for Annual (left) and Daily (right) data.
-
-**Annual Maximum Series:**
-- 4-Parameter Kappa (K4D): 8 stations (40%)
-- Generalized Logistic (GLO): 4 stations (20%)
-- Pearson Type III (PE3): 3 stations (15%)
-- Generalized Normal (GNO): 2 stations (10%)
-- Generalized Pareto (GPA): 2 stations (10%)
-- Generalized Extreme Value (GEV): 1 station (5%)
-
-**Daily Rainfall Series:**
-- 4-Parameter Kappa (K4D): 20 stations (100%)
-
-The 4-Parameter Kappa distribution emerged as the best-fitting distribution overall, particularly for daily rainfall data where it was unanimously selected for all stations.
+**Figure 5.3:** Distribution of best-fitting models for Annual Maximum Series (left) and Daily Rainfall Series (right) data. The pie charts illustrate the proportion of stations for which each distribution provided the best fit based on MADI/MSDI goodness-of-fit assessment. For Annual Maximum Series, the 4-Parameter Kappa (K4D) distribution was selected for 8 stations (40%), followed by Generalized Logistic (GLO) for 4 stations (20%), Pearson Type III (PE3) for 3 stations (15%), Generalized Normal (GNO) for 2 stations (10%), Generalized Pareto (GPA) for 2 stations (10%), and Generalized Extreme Value (GEV) for 1 station (5%). For Daily Rainfall Series, the 4-Parameter Kappa (K4D) distribution was unanimously selected for all 20 stations (100%), demonstrating its superior performance for daily rainfall data in tropical climates. The 4-Parameter Kappa distribution emerged as the best-fitting distribution overall, particularly for daily rainfall data where it was unanimously selected for all stations.
 
 ---
 
@@ -213,7 +200,7 @@ The 4-Parameter Kappa distribution emerged as the best-fitting distribution over
 
 ### 5.4.1 Return Values
 
-**Table 5.7: Return Values (mm) for Annual Maximum Series**
+**Table 5.8: Return Values (mm) for Annual Maximum Series**
 
 | Station ID | 2-year | 10-year | 50-year | 100-year |
 |------------|--------|---------|---------|----------|
@@ -238,7 +225,7 @@ The 4-Parameter Kappa distribution emerged as the best-fitting distribution over
 | 0700011RF | 206.3 | 413.2 | 745.9 | 961.4 |
 | 0700131RF | 265.6 | 493.4 | 579.8 | 597.8 |
 
-**Table 5.7b: Return Values (mm) for Daily Rainfall Series**
+**Table 5.9: Return Values (mm) for Daily Rainfall Series**
 
 | Station ID | 2-year | 10-year | 50-year | 100-year |
 |------------|--------|---------|---------|----------|
@@ -278,7 +265,7 @@ The 4-Parameter Kappa distribution emerged as the best-fitting distribution over
 - **Return Period Gradient**: As expected, return values increase with return period across all stations, creating a clear gradient from left (shorter return periods) to right (longer return periods) in the heatmap.
 - **100-Year Return Values Range**: The 100-year return values for Annual Maximum Series range from 365.5 mm (station 0670211RF: Rumah Pam Padang Landak) to 1124.9 mm (station 0680071RF: Balai Polis Kg. Dura), representing a 3.1-fold variation across the study area.
 - **Station-Specific Patterns**: Some stations show consistently high return values across all return periods (e.g., 0680071RF, 0700011RF), while others maintain relatively moderate values (e.g., 0670211RF, 0680081RF), indicating regional differences in extreme rainfall characteristics.
-- **Comparison Context**: When compared to Daily Rainfall Series (Table 5.7b), the Annual Maximum Series return values are substantially higher. For example, at the 100-year return period, Daily Rainfall Series values range from 129.9 mm to 169.3 mm, which are 2.8 to 6.6 times lower than their Annual Maximum counterparts, highlighting the significant overestimation inherent in the Annual Maximum approach for tropical regions.
+- **Comparison Context**: When compared to Daily Rainfall Series (Table 5.9), the Annual Maximum Series return values are substantially higher. For example, at the 100-year return period, Daily Rainfall Series values range from 129.9 mm to 169.3 mm, which are 2.8 to 6.6 times lower than their Annual Maximum counterparts, highlighting the significant overestimation inherent in the Annual Maximum approach for tropical regions.
 
 ---
 
@@ -301,7 +288,7 @@ OE%(M) = (OE(M) - 1) × 100
 
 The 99th percentile represents extreme rainfall events that are critical for flood risk assessment. These events occur in the upper tail of the distribution and are of greatest concern for infrastructure design and flood management in tropical regions. The test magnitudes at the 99th percentile are calculated from the complete daily time series including zero rainfall days, following the Complete Time-series Analysis (CTA) approach (Volpi et al., 2019), providing a true frequency representation of extreme events in the complete time series.
 
-**Table 5.8: Overestimation Analysis at 99th Percentile**
+**Table 5.10: Overestimation Analysis at 99th Percentile**
 
 | Station ID | Magnitude (mm) | RP_AM (years) | RP_Daily (days) | OE Factor | OE (%) |
 |------------|----------------|---------------|-----------------|-----------|--------|
