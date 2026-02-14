@@ -79,11 +79,13 @@ Table 5.1 presents the L-moment statistics for all twenty stations.
 
 ![Figure 5.1: L-Moment Ratio Diagram](../Coding/Cursor%20Analysis/Figures/Figure_5_1_LMoments_Ratio_Diagram.png)
 
-**Figure 5.1:** L-Moment Ratio Diagram comparing Annual Maximum Series (blue) and Daily Rainfall Series (red).
+**Figure 5.1:** L-Moment Ratio Diagram comparing Annual Maximum Series (blue circles) and Daily Rainfall Series (red squares) with theoretical distribution curves. The theoretical curves represent the relationship between L-skewness (τ₃) and L-kurtosis (τ₄) for different probability distributions: Gumbel (GUM), Normal (NOR), Exponential (EXP), Generalized Extreme Value (GEV), Generalized Logistic (GLO), Generalized Normal (GNO), Generalized Pareto (GPA), Pearson Type III (PE3), and 4-Parameter Kappa (K4D). These curves help identify which theoretical distributions are most appropriate for the observed data by showing where the empirical data points fall relative to the theoretical relationships.
 
-The diagram shows distinct clustering patterns:
-- Annual Maximum Series data points are scattered across a wider range
-- Daily Rainfall Series data points cluster tightly in a high L-skewness region (0.47-0.55)
+**Key Observations:**
+- **Annual Maximum Series data points** (blue circles) are scattered across a wider range of L-skewness (0.02 to 0.47) and L-kurtosis (0.02 to 0.38), indicating greater variability in distribution shapes across stations.
+- **Daily Rainfall Series data points** (red squares) cluster tightly in a high L-skewness region (0.47-0.55) with L-kurtosis values between 0.26 and 0.34, demonstrating consistent distributional characteristics across all stations.
+- **Theoretical Distribution Curves**: The empirical data points for Daily Rainfall Series fall closest to the 4-Parameter Kappa (K4D) distribution curve, which is consistent with the goodness-of-fit results showing K4D as the best-fitting distribution for all daily rainfall stations. The Annual Maximum Series points are more dispersed, with some stations near GLO, GNO, PE3, and K4D curves, reflecting the diversity of best-fitting distributions identified through MADI/MSDI analysis.
+- **Distribution Selection Validation**: The proximity of empirical points to theoretical curves provides visual confirmation of the distribution selection results, where K4D was selected for all daily stations, while Annual Maximum stations showed more variation (K4D, GLO, PE3, GNO, GPA, and GEV).
 
 ### 5.2.4 Distribution Parameter Estimation
 
@@ -99,28 +101,28 @@ The estimated parameters for the best-fitting distributions (identified through 
 |------------|--------------|-------------|-------------|-------------|-------------|-------------|
 | 0551621RF | Stor JPS Kuala Terengganu | PE3 | loc = 215.06 | scale = 75.44 | skew = 0.4063 | - |
 | 0580041RF | Klinik Bidan Kg. Baru Ajil | GEV | loc = 150.38 | scale = 50.89 | - | - |
-| 0600011RF | JPS Bukit Besi | KAP | loc = 158.98 | scale = 70.68 | k = 0.0118 | h = 0.1582 |
+| 0600011RF | JPS Bukit Besi | K4D | loc = 158.98 | scale = 70.68 | k = 0.0118 | h = 0.1582 |
 | 0600131RF | JPS Dungun | PE3 | loc = 224.34 | scale = 81.94 | skew = 0.3771 | - |
-| 0600141RF | Rumah Pam Paya Ketam | KAP | loc = 146.46 | scale = 91.81 | k = 0.2433 | h = 0.3573 |
+| 0600141RF | Rumah Pam Paya Ketam | K4D | loc = 146.46 | scale = 91.81 | k = 0.2433 | h = 0.3573 |
 | 0600151RF | JPS Kuala Dungun | GLO | loc = 170.36 | scale = 40.30 | k = -0.3254 | - |
 | 0620081RF | Rumah Pam Nyatoh | GNO | loc = 227.54 | scale = 96.85 | k = -0.2791 | - |
 | 0630011RF | JPS Kemaman | GLO | loc = 173.82 | scale = 45.06 | k = -0.3630 | - |
-| 0630121RF | JPS Kg. Ibok, Kemaman | KAP | loc = -65.33 | scale = 400.17 | k = 0.7719 | h = 1.6802 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | K4D | loc = -65.33 | scale = 400.17 | k = 0.7719 | h = 1.6802 |
 | 0670051RF | Rumah Pam Tok Sabah, Marang | PE3 | loc = 202.48 | scale = 86.24 | skew = 1.0630 | - |
 | 0670181RF | Kg. Tepuh, Hulu Terengganu | GPA | loc = 82.30 | scale = 221.17 | c = -0.5431 | - |
-| 0670211RF | Rumah Pam Padang Landak | KAP | loc = 176.56 | scale = 83.70 | k = 0.3575 | h = 0.2390 |
+| 0670211RF | Rumah Pam Padang Landak | K4D | loc = 176.56 | scale = 83.70 | k = 0.3575 | h = 0.2390 |
 | 0670221RF | JPS Kuala Berang | GNO | loc = 226.77 | scale = 107.08 | k = -0.4157 | - |
-| 0670251RF | Rumah Pam Jerangau | KAP | loc = 150.83 | scale = 143.56 | k = 0.3418 | h = 0.4815 |
-| 0670281RF | Kg. Menerong, Hulu Terengganu | KAP | loc = 1.01 | scale = 358.16 | k = 0.6172 | h = 1.2381 |
+| 0670251RF | Rumah Pam Jerangau | K4D | loc = 150.83 | scale = 143.56 | k = 0.3418 | h = 0.4815 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | K4D | loc = 1.01 | scale = 358.16 | k = 0.6172 | h = 1.2381 |
 | 0680071RF | Balai Polis Kg. Dura | GLO | loc = 236.22 | scale = 70.80 | k = -0.3827 | - |
-| 0680081RF | Rumah Pam Rantau Petronas | KAP | loc = 136.97 | scale = 164.13 | k = 0.6443 | h = 0.7154 |
-| 0690051RF | Rumah Pam Pengkalan Ranggon | KAP | loc = 184.77 | scale = 79.47 | k = -0.2098 | h = 0.0405 |
+| 0680081RF | Rumah Pam Rantau Petronas | K4D | loc = 136.97 | scale = 164.13 | k = 0.6443 | h = 0.7154 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | K4D | loc = 184.77 | scale = 79.47 | k = -0.2098 | h = 0.0405 |
 | 0700011RF | Rumah Pam Besut | GLO | loc = 206.26 | scale = 60.01 | k = -0.3835 | - |
 | 0700131RF | JPS Jertih, Besut | GPA | loc = 75.31 | scale = 335.91 | c = -0.6029 | - |
 
-*Note: Parameter notation: loc = location parameter, scale = scale parameter, k = shape parameter (for GEV, GLO, GNO, KAP), h = second shape parameter (Kappa distribution only), skew = skewness parameter (Pearson Type III), c = shape parameter (Generalized Pareto). For GEV distribution at station 0580041RF, the shape parameter k approaches zero, indicating a Gumbel-like distribution.*
+*Note: Parameter notation: loc = location parameter, scale = scale parameter, k = shape parameter (for GEV, GLO, GNO, K4D), h = second shape parameter (4-Parameter Kappa distribution only), skew = skewness parameter (Pearson Type III), c = shape parameter (Generalized Pareto). For GEV distribution at station 0580041RF, the shape parameter k approaches zero, indicating a Gumbel-like distribution.*
 
-**Table 5.6: Estimated Parameters for Kappa Distribution (Daily Rainfall Series)**
+**Table 5.6: Estimated Parameters for 4-Parameter Kappa Distribution (Daily Rainfall Series)**
 
 | Station ID | Station Name | Location (loc) | Scale (scale) | Shape 1 (k) | Shape 2 (h) |
 |------------|--------------|---------------|---------------|-------------|-------------|
@@ -145,7 +147,7 @@ The estimated parameters for the best-fitting distributions (identified through 
 | 0700011RF | Rumah Pam Besut | -5.85 | 15.98 | -0.3165 | 1.4958 |
 | 0700131RF | JPS Jertih, Besut | -5.64 | 14.99 | -0.3399 | 1.5092 |
 
-*Note: All daily rainfall series use the Kappa (KAP) distribution. The Kappa distribution is a four-parameter distribution with location (loc), scale, and two shape parameters (k and h).*
+*Note: All daily rainfall series use the 4-Parameter Kappa (K4D) distribution. The 4-Parameter Kappa distribution is a four-parameter distribution with location (loc), scale, and two shape parameters (k and h).*
 
 #### 5.2.4.2 Comprehensive Parameter Tables for All Distributions
 
@@ -161,22 +163,22 @@ The following tables present estimated parameters for all nine distributions fit
 |------------|-------------------|------|------|
 | 0551621RF | PE3 | 0.0469 | 0.0039 |
 | 0580041RF | GEV | 0.0801 | 0.0249 |
-| 0600011RF | KAP | 0.0294 | 0.0013 |
+| 0600011RF | K4D | 0.0294 | 0.0013 |
 | 0600131RF | PE3 | 0.0361 | 0.0018 |
-| 0600141RF | KAP | 0.0473 | 0.0039 |
+| 0600141RF | K4D | 0.0473 | 0.0039 |
 | 0600151RF | GLO | 0.0282 | 0.0015 |
 | 0620081RF | GNO | 0.0405 | 0.0026 |
 | 0630011RF | GLO | 0.0564 | 0.0059 |
-| 0630121RF | KAP | 0.0301 | 0.0013 |
+| 0630121RF | K4D | 0.0301 | 0.0013 |
 | 0670051RF | PE3 | 0.0410 | 0.0031 |
 | 0670181RF | GPA | 0.0619 | 0.0059 |
-| 0670211RF | KAP | 0.0195 | 0.0008 |
+| 0670211RF | K4D | 0.0195 | 0.0008 |
 | 0670221RF | GNO | 0.0576 | 0.0056 |
-| 0670251RF | KAP | 0.0431 | 0.0037 |
-| 0670281RF | KAP | 0.0664 | 0.0200 |
+| 0670251RF | K4D | 0.0431 | 0.0037 |
+| 0670281RF | K4D | 0.0664 | 0.0200 |
 | 0680071RF | GLO | 0.0551 | 0.0062 |
-| 0680081RF | KAP | 0.0363 | 0.0031 |
-| 0690051RF | KAP | 0.0372 | 0.0030 |
+| 0680081RF | K4D | 0.0363 | 0.0031 |
+| 0690051RF | K4D | 0.0372 | 0.0030 |
 | 0700011RF | GLO | 0.0735 | 0.0160 |
 | 0700131RF | GPA | 0.0549 | 0.0049 |
 
@@ -184,7 +186,7 @@ The following tables present estimated parameters for all nine distributions fit
 
 | Station ID | Best Distribution | MADI | MSDI |
 |------------|-------------------|------|------|
-| All 20 stations | KAP | 0.018-0.040 | 0.001-0.005 |
+| All 20 stations | K4D | 0.018-0.040 | 0.001-0.005 |
 
 ### 5.3.2 Distribution Summary
 
@@ -193,7 +195,7 @@ The following tables present estimated parameters for all nine distributions fit
 **Figure 5.3:** Distribution of best-fitting models for Annual (left) and Daily (right) data.
 
 **Annual Maximum Series:**
-- Kappa (KAP): 8 stations (40%)
+- 4-Parameter Kappa (K4D): 8 stations (40%)
 - Generalized Logistic (GLO): 4 stations (20%)
 - Pearson Type III (PE3): 3 stations (15%)
 - Generalized Normal (GNO): 2 stations (10%)
@@ -201,9 +203,9 @@ The following tables present estimated parameters for all nine distributions fit
 - Generalized Extreme Value (GEV): 1 station (5%)
 
 **Daily Rainfall Series:**
-- Kappa (KAP): 20 stations (100%)
+- 4-Parameter Kappa (K4D): 20 stations (100%)
 
-The Kappa distribution emerged as the best-fitting distribution overall, particularly for daily rainfall data where it was unanimously selected for all stations.
+The 4-Parameter Kappa distribution emerged as the best-fitting distribution overall, particularly for daily rainfall data where it was unanimously selected for all stations.
 
 ---
 
@@ -261,7 +263,7 @@ The Kappa distribution emerged as the best-fitting distribution overall, particu
 | 0700011RF | 9.5 | 49.1 | 118.1 | 160.7 |
 | 0700131RF | 9.0 | 47.6 | 117.2 | 161.4 |
 
-*Note: All daily rainfall series use the Kappa (KAP) distribution. Return values are calculated for daily rainfall data (≥1mm) and represent the expected daily rainfall amount for the specified return period.*
+*Note: All daily rainfall series use the 4-Parameter Kappa (K4D) distribution. Return values are calculated for daily rainfall data (≥1mm) and represent the expected daily rainfall amount for the specified return period.*
 
 ![Figure 5.5: Return Period Curves Comparison](../Coding/Cursor%20Analysis/Figures/Figure_5_5_Return_Period_Curves.png)
 
@@ -356,7 +358,7 @@ The L-moments method successfully estimated distribution parameters for all twen
 
 ### 5.6.2 Distribution Selection (Research Question 2)
 
-The Kappa distribution was identified as the best-fitting distribution:
+The 4-Parameter Kappa distribution was identified as the best-fitting distribution:
 - 40% of stations for Annual Maximum Series
 - 100% of stations for Daily Rainfall Series
 
@@ -388,7 +390,7 @@ The key findings from this analysis are:
 
 1. **Objective 1**: L-moments were successfully calculated for all stations, with daily data showing consistently higher L-skewness.
 
-2. **Objective 2**: The Kappa distribution is the best-fitting distribution for both annual (40%) and daily (100%) data.
+2. **Objective 2**: The 4-Parameter Kappa distribution is the best-fitting distribution for both annual (40%) and daily (100%) data.
 
 3. **Objective 3**: 100-year return values for Annual Maximum Series range from 390 to 775 mm, while Daily Rainfall Series return values range from 130 to 169 mm across stations.
 

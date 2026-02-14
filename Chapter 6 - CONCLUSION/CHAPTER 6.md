@@ -26,13 +26,13 @@ The L-moments method demonstrated its robustness and suitability for parameter e
 
 Distribution selection based on the Mean Absolute Deviation Index (MADI) revealed important patterns:
 
-- **Annual Maximum Series**: Multiple distributions provided best fits across stations, including Kappa (40%), Generalized Logistic (20%), Pearson Type III (15%), Generalized Normal (10%), Generalized Pareto (10%), and Generalized Extreme Value (5%).
+- **Annual Maximum Series**: Multiple distributions provided best fits across stations, including 4-Parameter Kappa (K4D) (40%), Generalized Logistic (20%), Pearson Type III (15%), Generalized Normal (10%), Generalized Pareto (10%), and Generalized Extreme Value (5%).
 
-- **Daily Rainfall Series**: The Kappa distribution was unanimously selected as the best-fitting distribution for all twenty stations (100%).
+- **Daily Rainfall Series**: The 4-Parameter Kappa (K4D) distribution was unanimously selected as the best-fitting distribution for all twenty stations (100%).
 
-- **Overall Finding**: The four-parameter Kappa distribution (Hosking, 1994) emerged as the most suitable distribution for modeling rainfall in tropical Terengganu, consistent with findings from other tropical studies (Parida, 1999; Murshed et al., 2014).
+- **Overall Finding**: The 4-Parameter Kappa (K4D) distribution (Hosking, 1994) emerged as the most suitable distribution for modeling rainfall in tropical Terengganu, consistent with findings from other tropical studies (Parida, 1999; Murshed et al., 2014).
 
-The superior performance of the Kappa distribution for daily data suggests that the additional flexibility provided by the fourth parameter is essential for capturing the complex rainfall patterns characteristic of tropical climates.
+The superior performance of the 4-Parameter Kappa distribution for daily data suggests that the additional flexibility provided by the fourth parameter is essential for capturing the complex rainfall patterns characteristic of tropical climates.
 
 ### 6.2.3 Objective 3: Return Period Analysis
 
@@ -70,7 +70,7 @@ The L-moments method is highly applicable and effective for rainfall frequency a
 
 ### 6.3.2 Distribution Selection
 
-The Kappa distribution is recommended as the primary distribution for rainfall frequency analysis in Terengganu. Its unanimous selection for daily data and frequent selection for annual maxima demonstrates its versatility in capturing the range of rainfall patterns observed in tropical climates. This finding aligns with the recommendations of Hosking (1994) regarding the use of flexible, multi-parameter distributions for complex hydrological data.
+The 4-Parameter Kappa (K4D) distribution is recommended as the primary distribution for rainfall frequency analysis in Terengganu. Its unanimous selection for daily data and frequent selection for annual maxima demonstrates its versatility in capturing the range of rainfall patterns observed in tropical climates. This finding aligns with the recommendations of Hosking (1994) regarding the use of flexible, multi-parameter distributions for complex hydrological data.
 
 ### 6.3.3 Limitations of Annual Maxima Approach
 
@@ -146,7 +146,7 @@ Based on the findings of this research, the following recommendations are made f
 
 1. **Dual Analysis Approach**: When designing flood mitigation infrastructure in tropical regions, conduct frequency analysis using both Annual Maxima and daily rainfall data. Compare the results and consider the more conservative estimates for critical infrastructure.
 
-2. **Distribution Selection**: Use the Kappa distribution as the primary candidate for rainfall frequency analysis in Malaysia. If computational limitations exist, the Generalized Logistic (GLO) or Generalized Extreme Value (GEV) distributions are suitable alternatives.
+2. **Distribution Selection**: Use the 4-Parameter Kappa (K4D) distribution as the primary candidate for rainfall frequency analysis in Malaysia. If computational limitations exist, the Generalized Logistic (GLO) or Generalized Extreme Value (GEV) distributions are suitable alternatives.
 
 3. **Overestimation Adjustment**: Apply an adjustment factor to AM-based return period estimates when designing for tropical conditions. A factor of 3 to 4 based on this study's findings may be appropriate for Terengganu.
 
@@ -212,7 +212,7 @@ This research has demonstrated the applicability of L-moments for flood frequenc
 
 The results support the call by Volpi et al. (2019) to "save hydrological observations" by using complete time-series analysis rather than decimating data to annual maxima. In tropical climates like Malaysia, where multiple extreme events occur within each year, the traditional AM approach discards valuable information that is essential for accurate risk assessment.
 
-The Kappa distribution, with its four-parameter flexibility, has been identified as the most suitable distribution for modeling rainfall in Terengganu. This finding contributes to the growing body of evidence supporting the use of flexible distributions for complex hydrological data.
+The 4-Parameter Kappa (K4D) distribution, with its four-parameter flexibility, has been identified as the most suitable distribution for modeling rainfall in Terengganu. This finding contributes to the growing body of evidence supporting the use of flexible distributions for complex hydrological data.
 
 As climate change continues to alter precipitation patterns globally, the need for accurate frequency analysis methods becomes ever more critical. This research provides a foundation for improving flood frequency analysis practices in tropical regions, ultimately contributing to better-designed infrastructure and more resilient communities.
 

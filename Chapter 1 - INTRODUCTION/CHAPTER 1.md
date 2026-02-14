@@ -93,7 +93,7 @@ The research utilizes historical rainfall data collected over several decades by
 
 **Methodological Scope**
 
-The study employs the L-moments method for parameter estimation and distribution fitting. Nine probability distributions are evaluated: Gumbel (GUM), Normal (NOR), Exponential (EXP), Generalized Extreme Value (GEV), Generalized Logistic (GLO), Generalized Normal (GNO), Generalized Pareto (GPA), Pearson Type III (PE3), and Kappa (KAP). The goodness-of-fit assessment is conducted using the Mean Absolute Deviation Index (MADI) and Mean Squared Deviation Index (MSDI) to identify the most appropriate distribution for each station.
+The study employs the L-moments method for parameter estimation and distribution fitting. Nine probability distributions are evaluated: Gumbel (GUM), Normal (NOR), Exponential (EXP), Generalized Extreme Value (GEV), Generalized Logistic (GLO), Generalized Normal (GNO), Generalized Pareto (GPA), Pearson Type III (PE3), and 4-Parameter Kappa (K4D). The goodness-of-fit assessment is conducted using the Mean Absolute Deviation Index (MADI) and Mean Squared Deviation Index (MSDI) to identify the most appropriate distribution for each station.
 
 **Analytical Scope**
 

@@ -130,7 +130,7 @@ Jenkinson (1955) unified these three types into the Generalized Extreme Value (G
 
 ### 2.4.4 Four-Parameter Distributions
 
-**Kappa Distribution**: The four-parameter Kappa distribution was introduced by Hosking (1994) as a flexible distribution that includes GEV, GLO, and GPA as special cases. The additional parameter provides greater flexibility in fitting the upper tail of the distribution, which is critical for extreme event estimation. Studies have found the Kappa distribution to provide excellent fits for rainfall data in various climatic conditions (Parida, 1999; Murshed et al., 2014).
+**4-Parameter Kappa Distribution (K4D)**: The 4-Parameter Kappa distribution was introduced by Hosking (1994) as a flexible distribution that includes GEV, GLO, and GPA as special cases. The additional parameter provides greater flexibility in fitting the upper tail of the distribution, which is critical for extreme event estimation. Studies have found the 4-Parameter Kappa distribution to provide excellent fits for rainfall data in various climatic conditions (Parida, 1999; Murshed et al., 2014).
 
 **Wakeby Distribution**: The five-parameter Wakeby distribution, introduced by Houghton (1978), provides even greater flexibility but may be prone to overfitting with limited sample sizes (Hosking, 1986).
 

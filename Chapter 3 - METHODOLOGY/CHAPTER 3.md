@@ -148,9 +148,9 @@ Nine probability distributions commonly used in flood frequency analysis were fi
 | GNO | Generalized Normal (Log-Normal Type III) | 3 (location, scale, shape) |
 | GPA | Generalized Pareto | 3 (location, scale, shape) |
 | PE3 | Pearson Type III | 3 (location, scale, shape) |
-| KAP | Kappa | 4 (location, scale, shape1, shape2) |
+| KAP | 4-Parameter Kappa (K4D) | 4 (location, scale, shape1, shape2) |
 
-The Gumbel distribution has been widely used in extreme value analysis since its introduction (Gumbel, 1958). The Generalized Extreme Value (GEV) distribution provides a flexible three-parameter family that includes Gumbel as a special case (Jenkinson, 1955; Coles, 2001). The four-parameter Kappa distribution, introduced by Hosking (1994), offers additional flexibility and includes GEV, GLO, and GPA as special cases.
+The Gumbel distribution has been widely used in extreme value analysis since its introduction (Gumbel, 1958). The Generalized Extreme Value (GEV) distribution provides a flexible three-parameter family that includes Gumbel as a special case (Jenkinson, 1955; Coles, 2001). The 4-Parameter Kappa (K4D) distribution, introduced by Hosking (1994), offers additional flexibility and includes GEV, GLO, and GPA as special cases. The 4-Parameter Kappa distribution has been successfully applied to rainfall frequency analysis in various climatic conditions, including tropical monsoon regions (Parida, 1999).
 
 For Malaysian rainfall data, previous studies have found that three-parameter distributions such as GEV, GLO, and PE3 generally provide better fits than two-parameter distributions (Zin et al., 2009; Zalina et al., 2002; Suhaila & Jemain, 2008).
 
