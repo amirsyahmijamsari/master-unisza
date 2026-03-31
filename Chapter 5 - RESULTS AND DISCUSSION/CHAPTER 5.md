@@ -46,9 +46,19 @@ flowchart TD
     E --> E1[Compare AMS vs Daily Return Periods\nat 99th Percentile Magnitude]
     E1 --> E2["Overestimation Factor\nOE = RP_AM ÷ (RP_Daily ÷ 365.25)"]
     E2 --> E3["Results: Table 5.27\nOE Factor: 7.14x to 9.99x\nMean OE: 8.50x · Mean OE%: 750%"]
-    E3 --> E4[Station-level Charts\nFigures 5.7 & 5.8]
+    E3 --> E4[Station-level Charts
+Figures 5.7 & 5.8]
 
-    E4 --> F
+    E4 --> E5["🔬 §5.5.3 — Sensitivity Analysis
+OE Factor across 6 Percentile Thresholds
+90th · 95th · 97th · 99th · 99.5th · 99.9th"]
+    E5 --> E5a["Coverage: only 99th gives all 20 stations"]
+    E5 --> E5b["Stability: lowest CV at 99th — CV = 0.11"]
+    E5 --> E5c["Relevance: ~110 mm is engineering-extreme"]
+    E5a & E5b & E5c --> E5d["Conclusion: 99th percentile confirmed
+Figures 5.9 & 5.10 — Table 5.28"]
+
+    E5d --> F
 
     F[💬 §5.6 — Discussion\nInterpretation Across All Objectives]
     F --> F1[Parameter Estimation §5.6.1]
@@ -66,6 +76,8 @@ flowchart TD
     style C fill:#2e86ab,color:#fff,stroke:#1a5f7a
     style D fill:#2e86ab,color:#fff,stroke:#1a5f7a
     style E fill:#c0392b,color:#fff,stroke:#922b21
+    style E5 fill:#d35400,color:#fff,stroke:#a04000
+    style E5d fill:#e67e22,color:#fff,stroke:#ca6f1e
     style F fill:#27ae60,color:#fff,stroke:#1e8449
     style C3 fill:#f39c12,color:#fff,stroke:#d68910
 ```
