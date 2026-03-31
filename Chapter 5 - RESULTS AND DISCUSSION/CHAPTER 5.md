@@ -857,6 +857,45 @@ The 99th percentile represents extreme rainfall events that are critical for flo
 
 **Figure 5.8:** Overestimation Analysis Summary at 99th Percentile.
 
+### 5.5.3 Sensitivity Analysis: Justification for the 99th Percentile Threshold
+
+To evaluate the robustness of the overestimation quantification and to justify the selection of the 99th percentile as the reference threshold, a sensitivity analysis was conducted across six percentile levels: 90th, 95th, 97th, 99th, 99.5th, and 99.9th of the complete daily time series. The overestimation factor OE(M) was computed at each percentile for all twenty stations using the same Complete Time-series Analysis (CTA) methodology described in Section 5.5.
+
+**Table 5.28: Sensitivity Analysis — Overestimation Factor Across Percentile Thresholds**
+
+| Percentile | Stations with Valid Results | Mean Magnitude (mm) | Mean OE Factor | Min OE Factor | Max OE Factor | Mean OE% |
+|:----------:|:---------------------------:|:-------------------:|:--------------:|:-------------:|:-------------:|:--------:|
+| 90th       | 6 / 20                      | 29.0                | 74.78×         | 69.43×        | 81.89×        | 7,378%   |
+| 95th       | 11 / 20                     | 46.6                | 40.05×         | 35.91×        | 47.68×        | 3,905%   |
+| 97th       | 15 / 20                     | 60.9                | 25.52×         | 22.27×        | 30.13×        | 2,452%   |
+| **99th**   | **20 / 20**                 | **110.4**           | **8.51×**      | **7.14×**     | **9.99×**     | **751%** |
+| 99.5th     | 20 / 20                     | 153.6               | 4.84×          | 3.58×         | 6.84×         | 384%     |
+| 99.9th     | 20 / 20                     | 268.8               | 2.87×          | 1.76×         | 5.82×         | 187%     |
+
+*Note: Bold row denotes the adopted threshold. "Valid results" indicates stations for which the AMS distribution yields a finite return period for the given magnitude (i.e., the magnitude falls within the fitted distribution's support).*
+
+![Figure 5.9: Sensitivity Analysis Line Chart](../Coding/Cursor%20Analysis/Figures/Figure_5_9_Sensitivity_Percentile_Line.png)
+
+**Figure 5.9:** Overestimation factors across percentile thresholds for all twenty stations (upper panel) and coefficient of variation (CV) across thresholds per station (lower panel). The CV quantifies how stable the OE factor estimate is across different threshold choices; lower CV indicates greater threshold-independence.
+
+![Figure 5.10: Sensitivity Analysis Summary](../Coding/Cursor%20Analysis/Figures/Figure_5_10_Sensitivity_Percentile_Heatmap.png)
+
+**Figure 5.10:** Summary statistics of the overestimation factor (mean, minimum, and maximum with standard deviation error bars) across all six percentile thresholds (left panel), and the corresponding numeric summary table (right panel). The yellow-highlighted row indicates the adopted 99th percentile threshold.
+
+#### Rationale for Adopting the 99th Percentile
+
+The sensitivity analysis reveals three critical criteria that collectively justify the adoption of the 99th percentile as the reference threshold for overestimation quantification.
+
+**First, complete spatial coverage.** The 90th, 95th, and 97th percentile thresholds produce test magnitudes that, at several stations, fall below the lower bound of the fitted Annual Maximum Series distribution. This renders the AMS return period undefined (non-finite) for those stations, resulting in incomplete cross-station comparisons (6, 11, and 15 valid stations respectively, out of 20). Only the 99th percentile and above yield valid results for all twenty stations, a prerequisite for a statistically sound regional comparison.
+
+**Second, inter-station stability.** Among the three fully-covered thresholds (99th, 99.5th, 99.9th), the 99th percentile yields the narrowest relative range of overestimation factors (7.14× to 9.99×; coefficient of variation ≈ 0.11), compared to the 99.5th percentile (range: 3.58× to 6.84×; CV ≈ 0.19) and the 99.9th percentile (range: 1.76× to 5.82×; CV ≈ 0.38). The increasing variability at higher percentile thresholds reflects growing uncertainty in the tail behaviour of the fitted distributions, where limited observations reduce the reliability of extrapolated return period estimates. The 99th percentile therefore represents the point of optimum stability before distributional uncertainty begins to dominate.
+
+**Third, hydrological and engineering relevance.** The mean threshold magnitude at the 99th percentile (approximately 110 mm) represents a genuinely extreme single-day rainfall event in the Terengganu context, exceeding typical design thresholds for medium-scale hydraulic infrastructure. By contrast, the 99.9th percentile magnitudes (mean ≈ 269 mm) approach compound or multi-day accumulation levels, at which point direct single-day comparisons between AMS and daily series become less physically interpretable. The 99th percentile thus lies at the intersection of hydrological extremity and distributional reliability.
+
+These three criteria — complete coverage, cross-station stability, and engineering relevance — collectively confirm that the 99th percentile is the optimal and scientifically defensible threshold for the overestimation comparison conducted in this study.
+
+*(See References chapter for complete reference list)*
+
 ---
 
 ## 5.6 Discussion
