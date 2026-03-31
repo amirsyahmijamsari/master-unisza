@@ -45,7 +45,7 @@ flowchart TD
     E[⚠️ §5.5 — Objective 4\nOverestimation Quantification]
     E --> E1[Compare AMS vs Daily Return Periods\nat 99th Percentile Magnitude]
     E1 --> E2["Overestimation Factor\nOE = RP_AM ÷ (RP_Daily ÷ 365.25)"]
-    E2 --> E3[Results: Table 5.27\nOE Factor: 7.14× – 9.99×\nMean OE: 8.50×  |  Mean OE%: 750%]
+    E2 --> E3["Results: Table 5.27\nOE Factor: 7.14x to 9.99x\nMean OE: 8.50x · Mean OE%: 750%"]
     E3 --> E4[Station-level Charts\nFigures 5.7 & 5.8]
 
     E4 --> F
