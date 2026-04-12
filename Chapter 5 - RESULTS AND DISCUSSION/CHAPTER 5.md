@@ -125,28 +125,28 @@ Table 5.1 presents the L-moment statistics for all twenty stations.
 
 **Table 5.2: L-Moment Statistics for Daily Rainfall Series**
 
-| Station ID | N | L₁ (Mean) | L₂ (Scale) | τ₃ (L-Skewness) | τ₄ (L-Kurtosis) |
-|------------|---|-----------|------------|-----------------|-----------------|
-| 0551621RF | 6,391 | 18.76 | 11.38 | 0.5052 | 0.2988 |
-| 0580041RF | 5,062 | 20.29 | 12.86 | 0.5446 | 0.3352 |
-| 0600011RF | 9,311 | 19.25 | 12.23 | 0.5462 | 0.3325 |
-| 0600131RF | 6,185 | 20.01 | 12.12 | 0.5045 | 0.3012 |
-| 0600141RF | 6,161 | 19.52 | 11.67 | 0.4957 | 0.2915 |
-| 0600151RF | 7,087 | 19.61 | 11.52 | 0.4715 | 0.2637 |
-| 0620081RF | 8,110 | 20.88 | 12.56 | 0.5005 | 0.3033 |
-| 0630011RF | 9,651 | 18.89 | 11.75 | 0.5269 | 0.3128 |
-| 0630121RF | 6,169 | 20.57 | 12.34 | 0.4964 | 0.2936 |
-| 0670051RF | 6,631 | 19.23 | 12.14 | 0.5418 | 0.3277 |
-| 0670181RF | 8,555 | 19.78 | 12.11 | 0.5121 | 0.3089 |
-| 0670211RF | 8,260 | 20.21 | 12.22 | 0.4990 | 0.2965 |
-| 0670221RF | 9,345 | 20.35 | 12.37 | 0.5017 | 0.2994 |
-| 0670251RF | 8,458 | 21.28 | 12.93 | 0.5105 | 0.3093 |
-| 0670281RF | 6,206 | 20.99 | 13.00 | 0.5273 | 0.3310 |
-| 0680071RF | 7,683 | 23.43 | 13.99 | 0.4892 | 0.2921 |
-| 0680081RF | 7,620 | 21.43 | 12.87 | 0.4980 | 0.2933 |
-| 0690051RF | 5,965 | 22.13 | 13.68 | 0.5266 | 0.3242 |
-| 0700011RF | 5,740 | 20.68 | 12.87 | 0.5344 | 0.3303 |
-| 0700131RF | 5,182 | 20.14 | 12.70 | 0.5470 | 0.3441 |
+| Station ID | Station Name | N | L₁ (Mean) | L₂ (Scale) | τ₃ (L-Skewness) | τ₄ (L-Kurtosis) |
+|------------|--------------|---|-----------|------------|-----------------|-----------------|
+| 0551621RF | Stor JPS Kuala Terengganu | 6,391 | 18.76 | 11.38 | 0.5052 | 0.2988 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 5,062 | 20.29 | 12.86 | 0.5446 | 0.3352 |
+| 0600011RF | JPS Bukit Besi | 9,311 | 19.25 | 12.23 | 0.5462 | 0.3325 |
+| 0600131RF | JPS Dungun | 6,185 | 20.01 | 12.12 | 0.5045 | 0.3012 |
+| 0600141RF | Rumah Pam Paya Ketam | 6,161 | 19.52 | 11.67 | 0.4957 | 0.2915 |
+| 0600151RF | JPS Kuala Dungun | 7,087 | 19.61 | 11.52 | 0.4715 | 0.2637 |
+| 0620081RF | Rumah Pam Nyatoh | 8,110 | 20.88 | 12.56 | 0.5005 | 0.3033 |
+| 0630011RF | JPS Kemaman | 9,651 | 18.89 | 11.75 | 0.5269 | 0.3128 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 6,169 | 20.57 | 12.34 | 0.4964 | 0.2936 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 6,631 | 19.23 | 12.14 | 0.5418 | 0.3277 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 8,555 | 19.78 | 12.11 | 0.5121 | 0.3089 |
+| 0670211RF | Rumah Pam Padang Landak | 8,260 | 20.21 | 12.22 | 0.4990 | 0.2965 |
+| 0670221RF | JPS Kuala Berang | 9,345 | 20.35 | 12.37 | 0.5017 | 0.2994 |
+| 0670251RF | Rumah Pam Jerangau | 8,458 | 21.28 | 12.93 | 0.5105 | 0.3093 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 6,206 | 20.99 | 13.00 | 0.5273 | 0.3310 |
+| 0680071RF | Balai Polis Kg. Dura | 7,683 | 23.43 | 13.99 | 0.4892 | 0.2921 |
+| 0680081RF | Rumah Pam Rantau Petronas | 7,620 | 21.43 | 12.87 | 0.4980 | 0.2933 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 5,965 | 22.13 | 13.68 | 0.5266 | 0.3242 |
+| 0700011RF | Rumah Pam Besut | 5,740 | 20.68 | 12.87 | 0.5344 | 0.3303 |
+| 0700131RF | JPS Jertih, Besut | 5,182 | 20.14 | 12.70 | 0.5470 | 0.3441 |
 
 **Key Findings:**
 - L₁ ranges from 18.76 to 23.43 mm (much lower than annual maxima)
@@ -693,34 +693,34 @@ The following tables present estimated parameters for all nine distributions fit
 
 **Table 5.23: Best-Fitting Distributions for Annual Maximum Series**
 
-| Station ID | Best Distribution | MADI | MSDI |
-|------------|-------------------|------|------|
-| 0551621RF | PE3 | 0.0469 | 0.0039 |
-| 0580041RF | GEV | 0.0801 | 0.0249 |
-| 0600011RF | K4D | 0.0294 | 0.0013 |
-| 0600131RF | PE3 | 0.0361 | 0.0018 |
-| 0600141RF | K4D | 0.0473 | 0.0039 |
-| 0600151RF | GLO | 0.0282 | 0.0015 |
-| 0620081RF | GNO | 0.0405 | 0.0026 |
-| 0630011RF | GLO | 0.0564 | 0.0059 |
-| 0630121RF | K4D | 0.0301 | 0.0013 |
-| 0670051RF | PE3 | 0.0410 | 0.0031 |
-| 0670181RF | GPA | 0.0619 | 0.0059 |
-| 0670211RF | K4D | 0.0195 | 0.0008 |
-| 0670221RF | GNO | 0.0576 | 0.0056 |
-| 0670251RF | K4D | 0.0431 | 0.0037 |
-| 0670281RF | K4D | 0.0664 | 0.0200 |
-| 0680071RF | GLO | 0.0551 | 0.0062 |
-| 0680081RF | K4D | 0.0363 | 0.0031 |
-| 0690051RF | K4D | 0.0372 | 0.0030 |
-| 0700011RF | GLO | 0.0735 | 0.0160 |
-| 0700131RF | GPA | 0.0549 | 0.0049 |
+| Station ID | Station Name | Best Distribution | MADI | MSDI |
+|------------|--------------|-------------------|------|------|
+| 0551621RF | Stor JPS Kuala Terengganu | PE3 | 0.0469 | 0.0039 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | GEV | 0.0801 | 0.0249 |
+| 0600011RF | JPS Bukit Besi | K4D | 0.0294 | 0.0013 |
+| 0600131RF | JPS Dungun | PE3 | 0.0361 | 0.0018 |
+| 0600141RF | Rumah Pam Paya Ketam | K4D | 0.0473 | 0.0039 |
+| 0600151RF | JPS Kuala Dungun | GLO | 0.0282 | 0.0015 |
+| 0620081RF | Rumah Pam Nyatoh | GNO | 0.0405 | 0.0026 |
+| 0630011RF | JPS Kemaman | GLO | 0.0564 | 0.0059 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | K4D | 0.0301 | 0.0013 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | PE3 | 0.0410 | 0.0031 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | GPA | 0.0619 | 0.0059 |
+| 0670211RF | Rumah Pam Padang Landak | K4D | 0.0195 | 0.0008 |
+| 0670221RF | JPS Kuala Berang | GNO | 0.0576 | 0.0056 |
+| 0670251RF | Rumah Pam Jerangau | K4D | 0.0431 | 0.0037 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | K4D | 0.0664 | 0.0200 |
+| 0680071RF | Balai Polis Kg. Dura | GLO | 0.0551 | 0.0062 |
+| 0680081RF | Rumah Pam Rantau Petronas | K4D | 0.0363 | 0.0031 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | K4D | 0.0372 | 0.0030 |
+| 0700011RF | Rumah Pam Besut | GLO | 0.0735 | 0.0160 |
+| 0700131RF | JPS Jertih, Besut | GPA | 0.0549 | 0.0049 |
 
 **Table 5.24: Best-Fitting Distributions for Daily Rainfall Series**
 
-| Station ID | Best Distribution | MADI | MSDI |
-|------------|-------------------|------|------|
-| All 20 stations | K4D | 0.018-0.040 | 0.001-0.005 |
+| Station ID | Station Name | Best Distribution | MADI | MSDI |
+|------------|--------------|-------------------|------|------|
+| All 20 stations | All Stations | K4D | 0.018-0.040 | 0.001-0.005 |
 
 ### 5.3.2 Distribution Summary
 
@@ -736,53 +736,53 @@ The following tables present estimated parameters for all nine distributions fit
 
 **Table 5.25: Return Values (mm) for Annual Maximum Series**
 
-| Station ID | 2-year | 10-year | 50-year | 100-year |
-|------------|--------|---------|---------|----------|
-| 0551621RF | 210.0 | 314.4 | 385.9 | 412.7 |
-| 0580041RF | 170.5 | 339.9 | 647.6 | 856.1 |
-| 0600011RF | 188.7 | 316.5 | 428.6 | 475.5 |
-| 0600131RF | 219.2 | 332.1 | 408.7 | 437.3 |
-| 0600141RF | 188.7 | 306.6 | 377.9 | 400.7 |
-| 0600151RF | 170.4 | 299.7 | 486.0 | 599.0 |
-| 0620081RF | 227.5 | 376.8 | 496.1 | 544.8 |
-| 0630011RF | 173.8 | 325.3 | 559.5 | 707.8 |
-| 0630121RF | 192.9 | 367.8 | 427.9 | 438.3 |
-| 0670051RF | 187.5 | 318.1 | 424.0 | 466.6 |
-| 0670181RF | 210.0 | 372.9 | 440.9 | 456.1 |
-| 0670211RF | 211.2 | 306.4 | 352.7 | 365.5 |
-| 0670221RF | 226.8 | 408.0 | 574.1 | 646.7 |
-| 0670251RF | 220.3 | 377.9 | 460.4 | 483.8 |
-| 0670281RF | 219.4 | 442.3 | 529.5 | 547.5 |
-| 0680071RF | 236.2 | 480.1 | 871.6 | 1124.9 |
-| 0680081RF | 219.1 | 333.4 | 371.2 | 378.6 |
-| 0690051RF | 216.3 | 413.6 | 664.9 | 800.4 |
-| 0700011RF | 206.3 | 413.2 | 745.9 | 961.4 |
-| 0700131RF | 265.6 | 493.4 | 579.8 | 597.8 |
+| Station ID | Station Name | 2-year | 10-year | 50-year | 100-year |
+|------------|--------------|--------|---------|---------|----------|
+| 0551621RF | Stor JPS Kuala Terengganu | 210.0 | 314.4 | 385.9 | 412.7 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 170.5 | 339.9 | 647.6 | 856.1 |
+| 0600011RF | JPS Bukit Besi | 188.7 | 316.5 | 428.6 | 475.5 |
+| 0600131RF | JPS Dungun | 219.2 | 332.1 | 408.7 | 437.3 |
+| 0600141RF | Rumah Pam Paya Ketam | 188.7 | 306.6 | 377.9 | 400.7 |
+| 0600151RF | JPS Kuala Dungun | 170.4 | 299.7 | 486.0 | 599.0 |
+| 0620081RF | Rumah Pam Nyatoh | 227.5 | 376.8 | 496.1 | 544.8 |
+| 0630011RF | JPS Kemaman | 173.8 | 325.3 | 559.5 | 707.8 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 192.9 | 367.8 | 427.9 | 438.3 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 187.5 | 318.1 | 424.0 | 466.6 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 210.0 | 372.9 | 440.9 | 456.1 |
+| 0670211RF | Rumah Pam Padang Landak | 211.2 | 306.4 | 352.7 | 365.5 |
+| 0670221RF | JPS Kuala Berang | 226.8 | 408.0 | 574.1 | 646.7 |
+| 0670251RF | Rumah Pam Jerangau | 220.3 | 377.9 | 460.4 | 483.8 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 219.4 | 442.3 | 529.5 | 547.5 |
+| 0680071RF | Balai Polis Kg. Dura | 236.2 | 480.1 | 871.6 | 1124.9 |
+| 0680081RF | Rumah Pam Rantau Petronas | 219.1 | 333.4 | 371.2 | 378.6 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 216.3 | 413.6 | 664.9 | 800.4 |
+| 0700011RF | Rumah Pam Besut | 206.3 | 413.2 | 745.9 | 961.4 |
+| 0700131RF | JPS Jertih, Besut | 265.6 | 493.4 | 579.8 | 597.8 |
 
 **Table 5.26: Return Values (mm) for Daily Rainfall Series**
 
-| Station ID | 2-year | 10-year | 50-year | 100-year |
-|------------|--------|---------|---------|----------|
-| 0551621RF | 9.2 | 45.3 | 102.6 | 135.9 |
-| 0580041RF | 8.9 | 48.8 | 118.8 | 162.0 |
-| 0600011RF | 8.3 | 46.7 | 113.3 | 153.8 |
-| 0600131RF | 9.9 | 48.0 | 109.1 | 145.1 |
-| 0600141RF | 9.8 | 46.8 | 104.5 | 137.7 |
-| 0600151RF | 10.3 | 47.8 | 101.2 | 129.9 |
-| 0620081RF | 10.6 | 49.5 | 112.7 | 150.4 |
-| 0630011RF | 8.6 | 46.0 | 107.5 | 143.7 |
-| 0630121RF | 10.4 | 49.3 | 110.6 | 146.0 |
-| 0670051RF | 8.4 | 46.7 | 112.2 | 151.8 |
-| 0670181RF | 9.6 | 47.4 | 109.6 | 146.6 |
-| 0670211RF | 10.1 | 48.6 | 109.5 | 145.1 |
-| 0670221RF | 10.1 | 48.9 | 111.1 | 147.5 |
-| 0670251RF | 10.4 | 50.7 | 116.9 | 156.5 |
-| 0670281RF | 10.0 | 49.4 | 118.5 | 161.8 |
-| 0680071RF | 12.1 | 55.8 | 124.6 | 164.7 |
-| 0680081RF | 10.7 | 51.5 | 115.5 | 152.4 |
-| 0690051RF | 10.4 | 52.6 | 124.9 | 169.3 |
-| 0700011RF | 9.5 | 49.1 | 118.1 | 160.7 |
-| 0700131RF | 9.0 | 47.6 | 117.2 | 161.4 |
+| Station ID | Station Name | 2-year | 10-year | 50-year | 100-year |
+|------------|--------------|--------|---------|---------|----------|
+| 0551621RF | Stor JPS Kuala Terengganu | 9.2 | 45.3 | 102.6 | 135.9 |
+| 0580041RF | Klinik Bidan Kg. Baru Ajil | 8.9 | 48.8 | 118.8 | 162.0 |
+| 0600011RF | JPS Bukit Besi | 8.3 | 46.7 | 113.3 | 153.8 |
+| 0600131RF | JPS Dungun | 9.9 | 48.0 | 109.1 | 145.1 |
+| 0600141RF | Rumah Pam Paya Ketam | 9.8 | 46.8 | 104.5 | 137.7 |
+| 0600151RF | JPS Kuala Dungun | 10.3 | 47.8 | 101.2 | 129.9 |
+| 0620081RF | Rumah Pam Nyatoh | 10.6 | 49.5 | 112.7 | 150.4 |
+| 0630011RF | JPS Kemaman | 8.6 | 46.0 | 107.5 | 143.7 |
+| 0630121RF | JPS Kg. Ibok, Kemaman | 10.4 | 49.3 | 110.6 | 146.0 |
+| 0670051RF | Rumah Pam Tok Sabah, Marang | 8.4 | 46.7 | 112.2 | 151.8 |
+| 0670181RF | Kg. Tepuh, Hulu Terengganu | 9.6 | 47.4 | 109.6 | 146.6 |
+| 0670211RF | Rumah Pam Padang Landak | 10.1 | 48.6 | 109.5 | 145.1 |
+| 0670221RF | JPS Kuala Berang | 10.1 | 48.9 | 111.1 | 147.5 |
+| 0670251RF | Rumah Pam Jerangau | 10.4 | 50.7 | 116.9 | 156.5 |
+| 0670281RF | Kg. Menerong, Hulu Terengganu | 10.0 | 49.4 | 118.5 | 161.8 |
+| 0680071RF | Balai Polis Kg. Dura | 12.1 | 55.8 | 124.6 | 164.7 |
+| 0680081RF | Rumah Pam Rantau Petronas | 10.7 | 51.5 | 115.5 | 152.4 |
+| 0690051RF | Rumah Pam Pengkalan Ranggon | 10.4 | 52.6 | 124.9 | 169.3 |
+| 0700011RF | Rumah Pam Besut | 9.5 | 49.1 | 118.1 | 160.7 |
+| 0700131RF | JPS Jertih, Besut | 9.0 | 47.6 | 117.2 | 161.4 |
 
 *Note: All daily rainfall series use the 4-Parameter Kappa (K4D) distribution. Return values are calculated for daily rainfall data (≥1mm) and represent the expected daily rainfall amount for the specified return period.*
 
