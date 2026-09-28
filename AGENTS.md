@@ -2,12 +2,18 @@
 
 ## General Thesis Writing Guidelines
 
-1. **Academic Writing Style**
-   - Use formal, objective, and precise language
+1. **Academic Writing Style & Anti-AI Tone**
+   - Use formal, objective, and precise language reflecting seasoned academic authorship
    - Avoid contractions (don't, can't, won't)
-   - Write in third person (avoid "I", "we", "you")
-   - Use passive voice where appropriate for scientific writing
+   - Write in third person (avoid "I", "we", "you", "our study")
+   - Use passive voice where appropriate for scientific methodology, and let data/results lead sentences in findings
    - Maintain consistency in terminology throughout the document
+   - **STRICTLY PROHIBIT AI HOT WORDS & CLICHÉS**:
+     - **Forbidden openers & transitions**: NEVER use *"Key findings"*, *"Key takeaways"*, *"Crucially"*, *"Notably"*, *"Importantly"*, *"Interestingly"*, *"It is worth noting that"*, *"In conclusion"*, *"To sum up"*. Lead directly with the subject, empirical metric, or statistical result.     - **Forbidden hype/filler vocabulary & robotic adverbs**: NEVER use *"predominantly"* (use *"primarily"* or simply *"relies on"*), *"substantially"* (use plain words or quantify), *"delve/delves into"*, *"testament to"*, *"pivotal role"*, *"vital role"*, *"cornerstone"*, *"beacon"*, *"tapestry"*, *"plethora"*, *"myriad"*, *"fosters"*, *"underscores"*, *"highlights"* (as empty verb), *"sheds light on"*, *"game-changer"*, *"revolutionizing"*, *"landscape"*, *"holistic"*, *"sampling decimation"*. Prefer simple, clear, professional human words.
+     - **Bahasa Melayu equivalents to avoid**: NEVER use *"sebahagian besarnya bergantung"* (use *"bergantung kepada"*), *"Penemuan utama"*, *"Paling penting"* (as sentence opener), *"Meneroka"*, *"Memainkan peranan penting"*, *"Menyuluh"*, *"Secara holistik"*, *"secara signifikan"* (unless statistical).
+     - Replace artificial hype with exact quantitative evidence (e.g., instead of *"substantially higher"*, state *"an overestimation factor of 8.50"*).
+   - **STRICTLY FORBID EM-DASHES & PARENTHETICAL DASHES**:
+     - NEVER use em-dashes (`—`) or parenthetical hyphens (` - `) to join clauses in sentences. This is an informal and overused AI habit. Use standard academic subordinate conjunctions (*"by"*, *"which"*, *"while"*), standard commas, or separate sentences. Hyphens in compound words (e.g., *4-Parameter*, *L-moments*) and en-dashes in numerical ranges (e.g., *2–100 years*) remain standard.
 
 2. **Statistical Terminology**
    - Use proper statistical notation and symbols consistently
