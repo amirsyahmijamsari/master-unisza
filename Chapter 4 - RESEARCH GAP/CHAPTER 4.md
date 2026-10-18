@@ -54,25 +54,25 @@ For a 30-year record with daily observations, the AM method reduces approximatel
 
 ### 4.3.2 Volpi et al. (2019): Save Hydrological Observations!
 
-The seminal paper by Volpi, Fiori, Grimaldi, Lombardo, and Koutsoyiannis (2019), titled "Save hydrological observations! Return period estimation without data decimation," provides a compelling argument against traditional data decimation practices. Their key findings include:
+The paper by Volpi, Fiori, Grimaldi, Lombardo, and Koutsoyiannis (2019), titled "Save hydrological observations! Return period estimation without data decimation," provides a mathematical argument against traditional data decimation practices. Their core framework establishes that:
 
 **The Complete Time-Series Analysis (CTA) Approach:**
 
-Volpi et al. propose using the full observed time series to estimate return periods rather than discarding data through selection procedures. The fundamental insight is that the average interarrival time of potentially damaging events is not affected by dependence structures—seasonality or clustering—as long as the full chronological dataset is used.
+Volpi et al. (2019) propose using the full observed time series to estimate return periods rather than discarding data through selection procedures. The theoretical foundation is that the average interarrival time of potentially damaging events is invariant to dependence structures, such as seasonality or event clustering, as long as the complete chronological dataset is preserved. In a companion theoretical review, Volpi (2019) demonstrated that when extreme events exhibit temporal clustering, the effective probability of failure across a hydraulic structure's operational lifetime is systematically higher than classical independent Bernoulli formulations indicate.
 
-**Key Findings from Volpi et al.:**
+**Methodological Principles from Volpi et al. (2019):**
 
-1. **More Conservative Estimates**: CTA yields more conservative (higher risk) return period estimates than AM methods, particularly for less frequent, long-return-period events
+1. **Conservative Risk Estimates**: CTA yields more conservative (higher risk) return period estimates than annual maximum approaches, particularly for upper quantiles.
 
-2. **Broader Applicability**: CTA provides reliable estimates over a broader range of return periods because it retains more information from the observational record
+2. **Information Preservation**: CTA retains the complete observational record, mitigating the information loss inherent in annual maximum decimation.
 
-3. **Better Statistical Power**: Using more data points improves the statistical reliability of fitted distributions, especially in the distribution tails that govern extreme event estimation
+3. **Sample Size Advantage**: Retaining high-frequency observations increases the sample size from $N$ annual values to $365.25 \times N$ daily values, improving statistical stability in upper distribution tails.
 
-4. **Reduced Uncertainty**: The increased sample size reduces confidence intervals around return period estimates
+4. **Reduced Estimation Variance**: The expanded observation count reduces uncertainty bounds surrounding recurrence interval estimates.
 
-**Implications for Tropical Climates:**
+**Process Limitations and Tropical Precipitation:**
 
-The Volpi et al. study highlights that traditional methods were developed for contexts where data decimation had minimal impact. In tropical climates with frequent extremes, the loss of information through decimation is far more consequential.
+The formulation by Volpi et al. (2019) was developed and validated on continuous streamflow regimes and synthetic continuous processes where flow is strictly positive. Applying CTA to daily precipitation in tropical climates introduces a fundamental physical challenge: rainfall is an intermittent process with substantial zero-inflation (40% to 55% dry days in Terengganu). Because standard continuous probability distributions cannot accommodate discrete point masses at zero without numerical instability (Hosking & Wallis, 1997; Rao & Hamed, 2000), implementing CTA for tropical precipitation necessitates an adapted framework that bridges continuous frequency benchmarking and zero-adjusted parametric modeling.
 
 ### 4.3.3 Statistical Consequences of Data Decimation
 
@@ -99,14 +99,14 @@ The reduction from daily to annual data introduces several statistical problems:
 
 ### 4.4.1 Gap 1: Limited Application of CTA in Tropical Regions
 
-While the Volpi et al. (2019) methodology has been validated in Mediterranean and temperate contexts, there is a notable lack of comprehensive studies applying Complete Time-series Analysis to tropical rainfall data. Specifically:
+While the Volpi et al. (2019) methodology has been validated in Mediterranean and temperate streamflow contexts, there is a notable lack of comprehensive studies applying Complete Time-series Analysis to tropical rainfall data. Specifically:
 
-- Few studies compare AM and daily-based return periods in Southeast Asian tropical climates
-- The degree of overestimation in tropical contexts remains unquantified
-- Recommendations for best practices in tropical regions are lacking
+- Few studies compare AM and daily-based return periods in Southeast Asian tropical climates.
+- The degree of overestimation in tropical contexts remains unquantified across regional gauging networks.
+- Methodological guidelines are lacking for adapting CTA to intermittent rainfall records that contain substantial zero-inflation.
 
 **How this research addresses the gap:**
-This study applies both AM and daily rainfall analysis to 20 stations in Terengganu, directly quantifying the overestimation factor and providing empirical evidence specific to tropical Malaysia.
+This study formulates an adapted tropical CTA framework evaluated across 20 hydrological stations in Terengganu. Benchmark test magnitudes are drawn from the complete daily series (including zero days) following Volpi et al. (2019), while L-moment distribution fitting is conducted on positive rainfall records in compliance with the two-component modeling standards of Hosking and Wallis (1997). This directly quantifies the overestimation factor and provides empirical evidence specific to tropical Malaysia.
 
 ### 4.4.2 Gap 2: Inadequate Distribution Selection for Tropical Data
 
@@ -276,9 +276,17 @@ The results of this analysis, presented in Chapter 5, demonstrate the importance
 
 ## References
 
-Volpi, E., Fiori, A., Grimaldi, S., Lombardo, F., & Koutsoyiannis, D. (2019). Save hydrological observations! Return period estimation without data decimation. *Journal of Hydrology*, 571, 782-792. https://doi.org/10.1016/j.jhydrol.2019.02.017
+Gringorten, I. I. (1963). A plotting rule for extreme probability paper. *Journal of Geophysical Research*, *68*(3), 813-814.
 
-Hosking, J. R. M. (1990). L-moments: Analysis and estimation of distributions using linear combinations of order statistics. *Journal of the Royal Statistical Society: Series B (Methodological)*, 52(1), 105-124.
+Hosking, J. R. M. (1990). L-moments: Analysis and estimation of distributions using linear combinations of order statistics. *Journal of the Royal Statistical Society: Series B (Methodological)*, *52*(1), 105-124.
 
-Gringorten, I. I. (1963). A plotting rule for extreme probability paper. *Journal of Geophysical Research*, 68(3), 813-814.
+Hosking, J. R. M., & Wallis, J. R. (1997). *Regional frequency analysis: An approach based on L-moments*. Cambridge University Press. https://doi.org/10.1017/CBO9780511529443
+
+Rao, A. R., & Hamed, K. H. (2000). *Flood frequency analysis*. CRC Press.
+
+Volpi, E. (2019). On return period and probability of failure in hydrology. *WIREs Water*, *6*(3), e1340. https://doi.org/10.1002/wat2.1340
+
+Volpi, E., Fiori, A., Grimaldi, S., Lombardo, F., & Koutsoyiannis, D. (2019). Save hydrological observations! Return period estimation without data decimation. *Journal of Hydrology*, *571*, 782-792. https://doi.org/10.1016/j.jhydrol.2019.02.017
+
+*(See References chapter for complete reference list)*
 

@@ -61,7 +61,7 @@ Two types of rainfall data were analyzed:
 
 1. **Annual Maximum Series (AMS)**: The highest daily rainfall value recorded in each year. This is the traditional approach used in flood frequency analysis (Dalrymple, 1960; Cunnane, 1989).
 
-2. **Daily Rainfall Series**: All daily rainfall records filtered to include only rainfall days (values ≥ 1 mm). This approach captures the full spectrum of rainfall events throughout the year, as advocated by Volpi et al. (2019) in their Complete Time-series Analysis framework.
+2. **Daily Rainfall Series**: All daily rainfall records filtered to include only rainfall days (values ≥ 1 mm). This approach captures the full spectrum of rainfall events throughout the year, as advocated in the Complete Time-series Analysis philosophy of Volpi et al. (2019).
 
 ### 3.3.4 Data Preprocessing
 
@@ -260,27 +260,31 @@ As noted by Madsen et al. (1997), the choice between annual maxima and partial d
 
 ### 3.8.2 Methodology
 
-For each station, the overestimation was calculated at the 99th percentile of the complete daily time series (including zero rainfall days). This approach follows the Complete Time-series Analysis (CTA) framework advocated by Volpi et al. (2019), which emphasizes using the full observed time series rather than decimated data. Including zero rainfall days in percentile calculations provides a more accurate representation of the true frequency of events in the complete time series, as it accounts for all days in the record.
+For each station, the overestimation was calculated at the 99th percentile of the complete daily time series (including zero rainfall days). This approach adopts the principles of Complete Time-series Analysis (CTA) advocated by Volpi et al. (2019), which emphasizes using the full observed time series rather than decimated data. Including zero rainfall days in percentile calculations provides a more accurate representation of the true frequency of events in the complete time series, as it accounts for all days in the record.
 
 The 99th percentile was selected as the focus of this analysis because it represents the extreme tail of the distribution where the most severe rainfall events occur. In tropical regions, extreme daily rainfall events (99th percentile and above) are critical for flood risk assessment and infrastructure design, as these events often trigger significant flooding (Papalexiou & Koutsoyiannis, 2013; Volpi et al., 2019). The analysis at the 99th percentile provides insight into how the Annual Maximum Series approach performs for the most extreme events, which are of greatest concern for flood management. Additionally, the 99th percentile provides complete data coverage (all 20 stations) and demonstrates the most stable and reliable overestimation estimates, with the lowest variability across stations compared to lower percentiles.
 
-**Important Note on Data Handling:**
-- **Percentile calculation**: Uses ALL daily data (including zeros) to determine test magnitudes, ensuring true frequency representation in the complete time series
-- **Distribution fitting**: Uses filtered daily data (≥1mm) to avoid zero-inflation issues in distribution fitting, as zeros create a mixed distribution that cannot be adequately modeled by continuous probability distributions
-- This dual approach ensures both accurate frequency representation (via percentiles from complete data) and proper statistical modeling (via distribution fitting to rainfall amounts only)
+**Data Handling and Zero-Inflation Adaptation:**
+- **Zero-inflation in continuous probability distributions**: The nine candidate distributions evaluated in this study (including the 4-Parameter Kappa, Generalized Extreme Value, and Pearson Type III) are continuous probability distributions where $P(X = 0) = 0$. In tropical climates such as Terengganu, daily precipitation records exhibit approximately 40% to 55% dry days ($X = 0\text{ mm}$). Fitting continuous distributions directly to raw daily records with a substantial discrete mass at zero creates numerical instability, causes convergence failure in numerical solvers, and distorts L-moment ratios (Hosking & Wallis, 1997; Rao & Hamed, 2000).
+- **Two-component mixed modeling (Hosking & Wallis, 1997)**: To resolve zero-inflation, Hosking and Wallis (1997, Section 2.8) and Rao and Hamed (2000) established that intermittent hydrological series should be represented through a two-component model:
+  $$F(x) = p_0 + (1 - p_0) F_{wet}(x) \quad \text{for } x \ge x_0$$
+  where $p_0$ is the discrete proportion of dry days, and L-moments parameter estimation is conducted strictly on non-zero rainfall amounts ($X \ge 1.0\text{ mm}$).
+- **Hybrid tropical CTA implementation**: While Volpi et al. (2019) introduced Complete Time-series Analysis (CTA) for continuous streamflow records where flow is strictly positive, applying CTA to tropical rainfall requires a hybrid procedure. In this research, benchmark test magnitudes ($M$) at the 99th percentile are derived from the complete daily time series (including zero days) to preserve true chronological frequency across the entire period of record as advocated by Volpi et al. (2019). Parameter estimation via L-moments is conducted on positive rainfall days ($X \ge 1.0\text{ mm}$) in accordance with Hosking and Wallis (1997). This dual structure ensures uncompromised frequency benchmarking while maintaining numerical validity during distribution fitting.
 
-1. **Annual Maximum Analysis**: Fit the best distribution to annual maxima and calculate the return period (RP_AM) for magnitude M in years.
+1. **Annual Maximum Analysis**: Fit the best-fitting distribution to the Annual Maximum Series (AMS) and compute the return period ($RP_{AM}$) for magnitude $M$ in years.
 
-2. **Daily Data Analysis**: Fit the best distribution to daily rainfall data (≥1mm) and calculate the return period (RP_daily) for magnitude M in days.
+2. **Daily Rainfall Analysis**: Fit the best-fitting distribution to daily rainfall records ($X \ge 1.0\text{ mm}$) and calculate the return period ($RP_{daily}$) for magnitude $M$ in days:
+   $$RP_{daily}(M) = \frac{1}{1 - F_{wet}(M)}$$
+   This metric quantifies the expected recurrence interval within the daily rainfall process.
 
 3. **Calculate Overestimation Factor**:
 
-OE(M) = RP_AM(M) / (RP_daily(M) / 365.25)
+$$OE(M) = \frac{RP_{AM}(M)}{RP_{daily}(M) / 365.25}$$
 
 Where:
-- RP_AM(M) = return period in years from Annual Maxima analysis
-- RP_daily(M) = return period in days from daily data analysis
-- Division by 365.25 converts daily return period to years
+- $RP_{AM}(M)$ = return period in years from Annual Maximum Series analysis
+- $RP_{daily}(M)$ = return period in days from daily data analysis
+- Division by 365.25 converts the daily recurrence rate to an annual equivalent basis
 
 4. **Calculate Overestimation Percentage**:
 

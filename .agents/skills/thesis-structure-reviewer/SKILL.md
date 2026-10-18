@@ -23,3 +23,12 @@ This skill guides the evaluation of chapter-by-chapter logical progression and s
 2. **Section Transitions & Cohesion**:
    - Verify every chapter begins with an introduction outlining chapter scope and ends with a transition summary into the next chapter.
    - Ensure the standard concluding reference disclaimer is present: *(See References chapter for complete reference list)*.
+
+3. **Acronym & Abbreviation Discipline**:
+   - Audit that acronyms (e.g., CTA, AMS, GEV, MADI, POT) are spelled out in full with parentheses on first mention per chapter.
+   - Strictly verify that subsequent sections and especially Chapter Summaries do not redundantly re-define them with parentheses; use only the acronym thereafter.
+
+4. **Formatting & Anti-AI Tone Enforcement**:
+   - Verify that there are zero raw bullet points (`- `, `* `, `•`) in the body text of all chapters; all points must be formulated as continuous scholarly paragraphs with subordinate transitional phrasing.
+   - Enforce zero em-dashes (`—`) and zero parenthetical hyphens (` - `) in sentence construction.
+

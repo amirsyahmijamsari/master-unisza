@@ -30,3 +30,10 @@ This skill enforces strict quantitative, structural, and terminological parity b
 3. **Section Headings & Word Counts**:
    - Ensure corresponding headings match UniSZA guidelines: Introduction / Pengenalan, Methodology / Metodologi, Results / Keputusan, Conclusion / Kesimpulan.
    - Maintain word count limits: **300 – 500 words** (as specified in `Abstract/Abstract Guidelines.jpeg`, Item #6).
+
+4. **Balanced CTA Terminology Guidelines**:
+   - Introduce **Complete Time-series Analysis (CTA)** / **Analisis Siri Masa Lengkap (CTA)** in the Introduction / Pengenalan as an *adapted framework* (drawing on the non-decimated analysis principles of Volpi et al., 2019).
+   - Do NOT clutter subsequent sections (Methodology, Results, Conclusion) with excessive repetition of 'under CTA' or 'CTA framework'.
+   - Use natural, standard hydrological terms: 'the AMS' / 'Siri Maksimum Tahunan (AMS)' and 'complete daily rainfall series' / 'siri hujan harian yang lengkap'.
+   - Never use the tautology 'AMS series' ('Annual Maximum Series series').
+

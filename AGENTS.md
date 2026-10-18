@@ -14,6 +14,12 @@
      - Replace artificial hype with exact quantitative evidence (e.g., instead of *"substantially higher"*, state *"an overestimation factor of 8.50"*).
    - **STRICTLY FORBID EM-DASHES & PARENTHETICAL DASHES**:
      - NEVER use em-dashes (`—`) or parenthetical hyphens (` - `) to join clauses in sentences. This is an informal and overused AI habit. Use standard academic subordinate conjunctions (*"by"*, *"which"*, *"while"*), standard commas, or separate sentences. Hyphens in compound words (e.g., *4-Parameter*, *L-moments*) and en-dashes in numerical ranges (e.g., *2–100 years*) remain standard.
+   - **STRICT PROHIBITION OF RAW BULLET POINTS IN THESIS BODY PROSE**:
+     - Never use raw bullet points (`- `, `* `, `•`) in thesis body text. All lists, criteria, and implications must be written as cohesive, continuous academic paragraphs using sequential transitional signposts (*"First"*, *"Second"*, *"Third"*, *"Furthermore"*, *"Finally"*).
+   - **ACRONYM & ABBREVIATION ECONOMY (RULE OF FIRST MENTION)**:
+     - Spell out full terms with parentheses (e.g., *Complete Time-Series Analysis (CTA)*, *Annual Maximum Series (AMS)*, *Generalized Extreme Value (GEV)*) **strictly on first mention in each chapter** (or in dedicated major section headers).
+     - In all subsequent sentences, paragraphs, and especially in Chapter Summaries, use **only the acronym** (*"CTA"*, *"the CTA framework"*, *"the AMS"*, *"the GEV distribution"*). Never redundantly re-define or re-spell out the full term with parentheses inside the same chapter.
+     - Ensure all acronyms are catalogued in the preliminary **List of Abbreviations** (*Senarai Singkatan*).
 
 2. **Statistical Terminology**
    - Use proper statistical notation and symbols consistently
@@ -136,7 +142,13 @@
    - Data format: CSV files with 'Value (mm)' column for precipitation data
    - Both Annual Maximum Series (AMS) and Daily series are analyzed
    - Provide code snippets or algorithms when appropriate
-   - Ensure reproducibility of results with proper documentation
+8. **Complete Time-Series Analysis (CTA) & Data Usage Rules**
+   - **Theoretical grounding**: Complete Time-series Analysis (CTA) was formulated by Volpi et al. (2019, *Journal of Hydrology*, 571, 782–792) to eliminate the severe information loss caused by "data decimation" (reducing hundreds of daily rainfall readings to a single annual maximum).
+   - **Tropical adaptation**: Pure CTA assumes continuous positive streamflow. In tropical daily precipitation with ~40%–55% dry days, continuous distributions cannot fit raw zeros directly. The research implements an **adapted complete daily time-series analysis framework** (frequency benchmarking at the 99th percentile across all calendar days, with L-moments distribution fitting on wet days $X \ge 1.0\text{ mm}$ via Hosking & Wallis, 1997).
+   - **Terminology and frequency rules**:
+     - Do NOT overuse 'CTA' as a repetitive tag across every sentence. Introduce it in the Introduction/Pengenalan as the theoretical paradigm/framework.
+     - In Methodology, Results, and Discussion, use standard hydrological terms: 'Annual Maximum Series (AMS)' / 'the AMS' and 'complete daily rainfall series' / 'daily rainfall series'.
+     - Never use the tautology 'AMS series' (which expands to 'Annual Maximum Series series').
 
 ## Chapter Structure Guidelines
 

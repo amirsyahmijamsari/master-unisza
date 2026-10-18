@@ -77,8 +77,8 @@ Beyond vocabulary, supervisors and reviewers spot AI by its **sentence architect
 To ensure the prose reads as authentic technical hydrology:
 
 1. **Named Statistical Frameworks**:
-   - Always write out **Annual Maximum Series (AMS)** on first mention; do not use colloquial terms like "annual maxima" or "yearly peaks".
-   - Use **Complete Time-series Analysis (CTA)** or **daily precipitation time series** rather than casual descriptions.
+   - Always write out **Annual Maximum Series (AMS)** on first mention; do not use colloquial terms like "annual maxima" or "yearly peaks", and never use the tautology "AMS series".
+   - Use **Complete Time-series Analysis (CTA)** to introduce the non-decimated theoretical framework (Volpi et al., 2019). Avoid overusing "under CTA" as a repetitive verbal tag; refer to data primarily as **complete daily rainfall series** or **daily rainfall series**.
 2. **Standard Mathematical Notations**:
    - L-moments: Mean ($L_1$ or $\lambda_1$), Scale ($L_2$ or $\lambda_2$), L-skewness ($\tau_3$), L-kurtosis ($\tau_4$), L-CV ($\tau$).
    - In Word / DOCX target files: Use exact Unicode (`λ₁`, `λ₂`, `τ₃`, `τ₄`, `τ`) to avoid uncompiled LaTeX symbols.
@@ -88,6 +88,17 @@ To ensure the prose reads as authentic technical hydrology:
 4. **Passive vs. Active Voice Balance**:
    - Methodology sections should primarily use **objective passive voice** (*"Datasets were compiled"*, *"Nine candidate distributions were fitted"*).
    - Results and discussion should let the data lead the sentence (*"The 4-Parameter Kappa distribution yielded lower MADI scores..."*). Avoid first-person pronouns (*"we"*, *"I"*, *"our"*).
+
+5. **Acronym Economy & Rule of First Mention**:
+   - Write out full terms with parentheses (e.g., *Complete Time-Series Analysis (CTA)*, *Annual Maximum Series (AMS)*, *Generalized Extreme Value (GEV)*) **strictly on first mention in each chapter** (or in a dedicated major section title).
+   - In all subsequent mentions throughout that same chapter, use **only the acronym** (*"CTA"*, *"the CTA framework"*, *"the AMS"*, *"the GEV distribution"*).
+   - Never redundantly re-define or re-spell out the full term with parentheses in subsequent subsections or in the Chapter Summary.
+   - List all abbreviations in the preliminary **List of Abbreviations** (*Senarai Singkatan*).
+
+6. **Prohibition of Raw Bullet Points and Em-Dashes in Thesis Prose**:
+   - Scientific thesis prose must not use raw markdown bullet lists (`- `, `* `, `•`) in body text.
+   - Convert all lists into flowing, coherent academic paragraphs using sequential subordinate connectors (*"First"*, *"Second"*, *"Third"*, *"Furthermore"*, *"Finally"*).
+   - Zero em-dashes (`—`) and parenthetical clause hyphens (` - `).
 
 ---
 
@@ -99,4 +110,7 @@ Before finalizing any text, execute this fast verification:
 - [ ] Are the words *"key findings"*, *"delve"*, *"testament"*, *"pivotal"*, *"beacon"*, or *"tapestry"* present? $\rightarrow$ **Remove immediately.**
 - [ ] Are performance differences quantified with actual values, percentages, or factors rather than hyperbolic praise?
 - [ ] Are statistical symbols correctly formatted and readable in the target medium (LaTeX vs. Word Unicode)?
+- [ ] Are acronyms defined once on first mention per chapter and used strictly as acronyms thereafter (no re-definitions in chapter summaries)?
+- [ ] Are there zero raw bullet points (`- `, `* `) and zero em-dashes (`—`) in thesis body text?
 - [ ] Does every paragraph deliver hard factual substance without repetitive motivational summaries?
+

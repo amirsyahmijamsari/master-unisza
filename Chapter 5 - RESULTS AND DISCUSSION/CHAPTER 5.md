@@ -744,7 +744,7 @@ OE%(M) = (OE(M) - 1) × 100
 
 ### 5.5.1 Overestimation Analysis at 99th Percentile
 
-The 99th percentile represents extreme rainfall events that are critical for flood risk assessment. These events occur in the upper tail of the distribution and are of greatest concern for infrastructure design and flood management in tropical regions. The test magnitudes at the 99th percentile are calculated from the complete daily time series including zero rainfall days, following the Complete Time-series Analysis (CTA) approach (Volpi et al., 2019), providing a true frequency representation of extreme events in the complete time series.
+The 99th percentile represents extreme rainfall events that are critical for flood risk assessment. These events occur in the upper tail of the distribution and are of greatest concern for infrastructure design and flood management in tropical regions. The test magnitudes at the 99th percentile are calculated from the complete daily time series including zero rainfall days, following the adapted Complete Time-series Analysis (CTA) framework (Volpi et al., 2019), providing a true frequency representation of extreme events in the complete time series.
 
 **Table 5.27: Overestimation Analysis at 99th Percentile**
 
@@ -782,7 +782,7 @@ The 99th percentile represents extreme rainfall events that are critical for flo
 **Key Findings:**
 - The test magnitudes at the 99th percentile range from 95.4 to 126.5 mm, representing extreme rainfall events in the complete time series context
 - All stations show consistent overestimation factors between 7-10x at the 99th percentile, indicating a uniform pattern when using the complete time series approach
-- The narrow range of overestimation factors (7.14x to 9.99x) with low standard deviation (0.91x) suggests stable and reliable estimates when using the CTA methodology
+- The narrow range of overestimation factors (7.14x to 9.99x) with low standard deviation (0.91x) suggests stable and reliable estimates when using the adapted complete daily time-series methodology
 - The 99th percentile provides complete data coverage (all 20 stations) compared to lower percentiles, making it the most robust metric for overestimation analysis
 
 ![Figure 5.7: Overestimation by Station](../Coding/Cursor%20Analysis/Figures/Figure_5_7_Overestimation_by_Station.png)
@@ -795,7 +795,7 @@ The 99th percentile represents extreme rainfall events that are critical for flo
 
 ### 5.5.3 Sensitivity Analysis: Justification for the 99th Percentile Threshold
 
-To evaluate the robustness of the overestimation quantification and to justify the selection of the 99th percentile as the reference threshold, a sensitivity analysis was conducted across six percentile levels: 90th, 95th, 97th, 99th, 99.5th, and 99.9th of the complete daily time series. The overestimation factor OE(M) was computed at each percentile for all twenty stations using the same Complete Time-series Analysis (CTA) methodology described in Section 5.5.
+To evaluate the robustness of the overestimation quantification and to justify the selection of the 99th percentile as the reference threshold, a sensitivity analysis was conducted across six percentile levels: 90th, 95th, 97th, 99th, 99.5th, and 99.9th of the complete daily time series. The overestimation factor OE(M) was computed at each percentile for all twenty stations using the same adapted Complete Time-series Analysis (CTA) methodology described in Section 5.5.
 
 **Table 5.28: Sensitivity Analysis — Overestimation Factor Across Percentile Thresholds**
 
@@ -854,11 +854,11 @@ Return values were successfully calculated for all stations. The results show si
 
 ### 5.6.4 Overestimation Quantification (Research Question 4)
 
-The Annual Maxima approach **overestimates return periods by an average factor of 8.50x** at the 99th percentile compared to daily rainfall data when using the Complete Time-series Analysis (CTA) approach. The test magnitudes at the 99th percentile (95.4-126.5 mm) represent extreme rainfall events in the complete time series context, calculated from percentiles of the complete daily time series including zero rainfall days, providing a true frequency representation of extreme events.
+The Annual Maxima approach **overestimates return periods by an average factor of 8.50x** at the 99th percentile compared to daily rainfall data when using the adapted Complete Time-series Analysis (CTA) approach. The test magnitudes at the 99th percentile (95.4-126.5 mm) represent extreme rainfall events in the complete time series context, calculated from percentiles of the complete daily time series including zero rainfall days, providing a true frequency representation of extreme events.
 
 This substantial overestimation indicates that for extreme rainfall events—those most critical for flood risk assessment—the Annual Maximum Series approach significantly underestimates the frequency of occurrence. Events that AM analysis suggests occur approximately once per year may actually occur approximately once every 43 days based on daily data analysis. This finding is particularly important for tropical regions where extreme daily rainfall events are frequent and can trigger severe flooding (Papalexiou & Koutsoyiannis, 2013; Volpi et al., 2019).
 
-The consistent overestimation pattern across all 20 stations (range: 7.14x to 9.99x) with low variability (standard deviation: 0.91x) demonstrates the robustness of this finding and the reliability of the CTA methodology for extreme event analysis.
+The consistent overestimation pattern across all 20 stations (range: 7.14x to 9.99x) with low variability (standard deviation: 0.91x) demonstrates the robustness of this finding and the reliability of the adapted daily time-series methodology for extreme event analysis.
 
 **Implications:**
 - Design standards based solely on AM analysis may severely underestimate flood risk for extreme events
@@ -878,6 +878,6 @@ The key findings from this analysis are:
 
 3. **Objective 3**: 100-year return values for Annual Maximum Series range from 390 to 775 mm, while Daily Rainfall Series return values range from 130 to 169 mm across stations.
 
-4. **Objective 4**: The Annual Maxima approach overestimates return periods by **8.50x on average at the 99th percentile** (range: 7.14x to 9.99x) when using the Complete Time-series Analysis approach. This substantial overestimation demonstrates the critical importance of using the complete time series for accurate frequency representation of extreme events, which are most relevant for flood risk assessment in tropical regions.
+4. **Objective 4**: The Annual Maxima approach overestimates return periods by **8.50x on average at the 99th percentile** (range: 7.14x to 9.99x) when evaluated against the complete daily time series. This substantial overestimation demonstrates the critical importance of using the complete time series for accurate frequency representation of extreme events, which are most relevant for flood risk assessment in tropical regions.
 
 These findings demonstrate the importance of considering daily rainfall data in flood frequency analysis for tropical regions.

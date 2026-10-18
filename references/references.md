@@ -6,7 +6,7 @@ Greenwood, J. A., Landwehr, J. M., Matalas, N. C., & Wallis, J. R. (1979). Proba
 
 Hosking, J. R. M. (1990). L-moments: Analysis and estimation of distributions using linear combinations of order statistics. *Journal of the Royal Statistical Society: Series B (Methodological)*, *52*(1), 105-124.
 
-Hosking, J. R. M., & Wallis, J. R. (1997). *Regional frequency analysis: An approach based on L-moments*. Cambridge University Press.
+Hosking, J. R. M., & Wallis, J. R. (1997). *Regional frequency analysis: An approach based on L-moments*. Cambridge University Press. https://doi.org/10.1017/CBO9780511529443
 
 Hosking, J. R. M. (1986). The theory of probability weighted moments (Research Report RC 12210). IBM Research Division.
 
@@ -90,6 +90,8 @@ Stedinger, J. R. (1983). Estimating a regional flood frequency distribution. *Wa
 
 Stedinger, J. R., & Griffis, V. W. (2008). Flood frequency analysis in the United States: Time to update. *Journal of Hydrologic Engineering*, *13*(4), 199-204.
 
+Volpi, E., Fiori, A., Grimaldi, S., & Lombardo, F. (2019). One hundred years of return period: Strengths and limitations. *Journal of Hydrology*, *571*, 782-792. https://doi.org/10.1016/j.jhydrol.2019.02.019
+
 ---
 
 ## Plotting Positions and Goodness-of-Fit
@@ -134,6 +136,8 @@ Papalexiou, S. M., & Koutsoyiannis, D. (2013). Battle of extreme value distribut
 
 Serinaldi, F., & Kilsby, C. G. (2015). Stationarity is undead: Uncertainty dominates the distribution of extremes. *Advances in Water Resources*, *77*, 17-36.
 
+Volpi, E. (2019). On return period and probability of failure in hydrology. *WIREs Water*, *6*(3), e1340. https://doi.org/10.1002/wat2.1340
+ 
 Volpi, E., Fiori, A., Grimaldi, S., Lombardo, F., & Koutsoyiannis, D. (2019). Save hydrological observations! Return period estimation without data decimation. *Journal of Hydrology*, *571*, 782-792. https://doi.org/10.1016/j.jhydrol.2019.02.017
 
 ---
