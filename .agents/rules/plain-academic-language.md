@@ -52,3 +52,16 @@ This rule strictly enforces clear, concise, and professional human language in a
 - [ ] Has every sentence with *"predominantly"*, *"substantially"*, or *"crucially"* been replaced or simplified?
 - [ ] Does the sentence start directly with the subject rather than an introductory filler adverb?
 - [ ] Are claims supported with concrete numbers rather than intensifiers?
+
+---
+
+## 5. Mathematical & Variable Typography (No Programming Underscores or Pseudo-Code)
+* **Zero Tolerance for `snake_case` & Code Shorthand in Thesis Text**:
+  - NEVER use computational script variables, raw underscores, or shorthand symbols (e.g., `RP_AM`, `RP_daily`, `OE_factor`, `OE%`, `OE%(M)`, `rp_am`, `madi_gev`) in thesis prose, equations, table headings, or figure captions. Underscores and `%` as variable names belong solely to scripts and spreadsheets.
+* **Standard Hydrological Notation**:
+  - Return periods / recurrence intervals must use the standard symbol $T$: $T_{\text{AM}}$ for Annual Maximum Series and $T_{\text{daily}}$ for complete daily series.
+  - Overestimation metrics follow formal hydrological ratio and percentage excess notation:
+    - Recurrence Ratio / Overestimation Factor: $R_T(M) = \frac{T_{\text{AM}}(M)}{T_{\text{daily}}(M) / 365.25}$
+    - Relative Percentage Excess: $\Delta_T(M) = [R_T(M) - 1] \times 100\%$
+  - Word subscripts must be upright roman: $F_{\text{wet}}(x)$, $T_{\text{daily}}$, $T_{\text{AM}}$ (never $F_{wet}$ or `F_wet`).
+  - In flowchart boxes and overview diagrams, state stages conceptually without cramming horizontal equations into body text.

@@ -21,11 +21,21 @@
      - In all subsequent sentences, paragraphs, and especially in Chapter Summaries, use **only the acronym** (*"CTA"*, *"the CTA framework"*, *"the AMS"*, *"the GEV distribution"*). Never redundantly re-define or re-spell out the full term with parentheses inside the same chapter.
      - Ensure all acronyms are catalogued in the preliminary **List of Abbreviations** (*Senarai Singkatan*).
 
-2. **Statistical Terminology**
+2. **Statistical Terminology & Mathematical Typography**
    - Use proper statistical notation and symbols consistently
    - Define all statistical terms and symbols when first introduced
    - Follow standard hydrological and statistical conventions
    - Use appropriate precision for numerical results (typically 3-4 significant figures)
+   - **STRICT PROHIBITION OF PROGRAMMING UNDERSCORES (`snake_case`) IN THESIS PROSE & EQUATIONS**:
+     - NEVER use programming/code-style underscores or `snake_case` identifiers (e.g., `RP_AM`, `RP_daily`, `OE_factor`, `rp_am`, `madi_gev`) in thesis prose, equations, tables, figures, or captions. Underscores belong exclusively to computational script files, not academic manuscripts.
+     - **Return Period Notation**: Recurrence intervals must be symbolized by standard mathematical notation $T$, never by concatenated letters with underscores:
+       - $T_{\text{AM}}$ denotes the return period in years from the Annual Maximum Series (AMS) (never `RP_AM` or `RP_{AM}`).
+       - $T_{\text{daily}}$ denotes the recurrence interval in days from the complete daily rainfall series (never `RP_daily` or `RP_{daily}`).
+     - **Overestimation Metrics & Return Period Ratio (Option 1 Standard)**:
+       - Overestimation Factor (formalized as return period ratio $R_T$): $R_T(M) = \frac{T_{\text{AM}}(M)}{T_{\text{daily}}(M) / 365.25}$ (never pseudo-code `OE_factor`, `OE(M)`, or `RP_AM / (RP_daily / 365.25)`).
+       - Relative Percentage Excess (overestimation percentage $\Delta_T$): $\Delta_T(M) = [R_T(M) - 1] \times 100\%$ (never pseudo-code `OE_percent`, `OE%`, or `OE%(M)`).
+       - In methodology summary boxes and flowcharts, do not cram display formulas into text; describe the stage conceptually using $R_T$ and $\Delta_T$.
+     - **Descriptive Subscripts**: Always set descriptive multi-letter word subscripts in upright roman text via `\text{...}` (e.g., $F_{\text{wet}}(x)$, $T_{\text{daily}}$, $T_{\text{AM}}$), rather than italic math text ($F_{wet}$) or raw underscores (`F_wet`).
 
 3. **Citation and Referencing (APA Style)**
    - Use American Psychological Association (APA) 7th edition style for all citations and references
@@ -80,6 +90,13 @@
    - Hosking, J. R. M. (1990). L-moments: Analysis and estimation of distributions using linear combinations of order statistics. *Journal of the Royal Statistical Society: Series B (Methodological)*, *52*(1), 105-124.
    - Greenwood, J. A., Landwehr, J. M., Matalas, N. C., & Wallis, J. R. (1979). Probability weighted moments: Definition and relation to parameters of several distributions expressible in inverse form. *Water Resources Research*, *15*(5), 1049-1054. https://doi.org/10.1029/WR015i005p01049
 
+4. **Native Microsoft Word Equation Standards (OMML Engine)**
+   - When generating or updating `.docx` thesis chapters, ALWAYS compile mathematical equations into **native Microsoft Office Math (OMML)** objects (`<m:oMath>`).
+   - Pipeline: LaTeX $\rightarrow$ MathML via `latex2mathml.converter.convert()` $\rightarrow$ OMML via `lxml.etree.XSLT` using Microsoft's official `C:\Program Files\Microsoft Office\root\Office16\MML2OMML.XSL` stylesheet.
+   - **Zero Tolerance for Broken Formulas**: NEVER output raw uncompiled LaTeX strings (`\left[`, `\int`, `\beta_r`, `_r`), and NEVER use bracketed pseudo-fractions (`[1] / [n]`). All division must use real horizontal fraction bars, real integral signs with limits, real summations, and proper subscript/superscript typography.
+   - **Numbered Display Formulas**: Centered horizontally across the page, with equation numbers (e.g., `(3.1)`) right-aligned flush against the right margin using a borderless 1-row, 2-column table.
+   - **Inline Math**: Every inline formula ($X$, $F(X)$, $\beta_r$, $M_{1,r,0}$, $b_r$, $\lambda_1$, $\tau_3$, etc.) must be embedded as an inline `<m:oMath>` object inside paragraph elements alongside regular text runs.
+
 ## L-Moments Flood Frequency Analysis Specific Rules
 
 1. **L-Moments Methodology**
@@ -112,14 +129,14 @@
    - Address uncertainty in estimates (confidence intervals, standard errors)
 
 4. **Overestimation Quantification**
-   - Quantify the degree of overestimation when using Annual Maxima (AM) approach relative to daily rainfall data
-   - Calculate Overestimation Factor: OE(M) = RP_AM(M) / (RP_daily(M) / 365.25)
-     - Where RP_AM(M) is the return period in years from Annual Maxima analysis
-     - Where RP_daily(M) is the return period in days from daily data analysis
+   - Quantify the degree of overestimation when using Annual Maximum Series (AMS) approach relative to complete daily rainfall data
+   - Calculate Overestimation Factor / Return Period Ratio: $R_T(M) = \frac{T_{\text{AM}}(M)}{T_{\text{daily}}(M) / 365.25}$
+     - Where $T_{\text{AM}}(M)$ is the return period in years from Annual Maximum Series analysis
+     - Where $T_{\text{daily}}(M)$ is the return period in days from daily data analysis
      - Convert daily return period to years by dividing by 365.25
-   - Calculate Overestimation Percentage: OE%(M) = ((RP_AM(M) / (RP_daily(M) / 365.25)) - 1) × 100
+   - Calculate Relative Percentage Excess: $\Delta_T(M) = [R_T(M) - 1] \times 100\%$
    - Present overestimation results with clear interpretation of the bias magnitude
-   - Example values: Overestimation Factor of 4.2947x corresponds to 329.47% overestimation
+   - Example values: Overestimation Ratio of 8.50 corresponds to 750% relative percentage excess ($\Delta_T = 750\%$)
    - Discuss implications of overestimation for flood risk assessment and infrastructure design
 
 5. **Technical Writing Requirements**
