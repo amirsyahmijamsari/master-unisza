@@ -12,7 +12,7 @@ This chapter presents a critical evaluation of the theoretical and empirical lit
 
 ### 2.2.1 Climate Classification
 
-Standard climate classification schemes, notably the Köppen-Geiger system, delineate global climate regions based on annual and monthly precipitation and temperature thresholds (Peel et al., 2007). Temperate climates, categorized as Group C and Group D, exhibit pronounced seasonal thermal cycles with moderate precipitation distributed across the year. Tropical climates, designated as Group A, maintain high temperatures throughout the year and experience heavy precipitation governed by intertropical convergence dynamics and seasonal monsoon circulation (Kottek et al., 2006).
+Standard climate classification schemes, specifically the Köppen-Geiger system, delineate global climate regions based on annual and monthly precipitation and temperature thresholds (Peel et al., 2007). Temperate climates, categorized as Group C and Group D, exhibit pronounced seasonal thermal cycles with moderate precipitation distributed across the year. Tropical climates, designated as Group A, maintain high temperatures throughout the year and experience heavy precipitation governed by intertropical convergence dynamics and seasonal monsoon circulation (Kottek et al., 2006).
 
 Understanding these underlying climatological boundaries is necessary for evaluating hydrological modeling frameworks. Methodologies and probability distributions developed for temperate catchments often fail when applied directly to equatorial regimes without appropriate modification (Koutsoyiannis & Montanari, 2015).
 
@@ -70,25 +70,27 @@ Traditional flood frequency analysis reduces rich observational datasets into sp
 
 The theoretical foundation of CTA rests on redefining the return period directly through the complete observational time series rather than relying on artificial samples of annual maxima. Volpi et al. (2019) established that the return period $T(x)$ corresponding to an extreme threshold $x$ is fundamentally defined as the mean interarrival time between consecutive exceedance events:
 
-$$T(x) = E[T(x)] = \frac{1}{\nu(x)}$$
+$$T(x) = E[T(x)] = \frac{1}{\nu(x)} \tag{2.1}$$
 
 where $\nu(x)$ represents the mean crossing rate or probability of exceedance per time unit.
 
 A central mathematical contribution of Volpi et al. (2019) is the proof that the average interarrival time of threshold crossings is invariant to the internal autocorrelation, clustering, or cyclo-stationary structure of the continuous process. In a discrete daily time step of one day, if $F(x) = P(X \le x)$ denotes the cumulative distribution function of the daily observations, the probability of exceeding magnitude $x$ on any given day is $P(X > x) = 1 - F(x)$. The expected interarrival time between exceedances is given by:
 
-$$E[T(x)] = \frac{1}{1 - F(x)} \quad \text{(days)}$$
+$$E[T(x)] = \frac{1}{1 - F(x)} \quad \text{(days)} \tag{2.2}$$
 
 Expressing this recurrence interval on an annual equivalent basis yields:
 
-$$T_{CTA}(x) = \frac{E[T(x)]}{365.25} = \frac{1}{365.25 \cdot [1 - F(x)]} \quad \text{(years)}$$
+$$T_{\text{CTA}}(x) = \frac{E[T(x)]}{365.25} = \frac{1}{365.25 \cdot [1 - F(x)]} \quad \text{(years)} \tag{2.3}$$
 
-Under the conventional Annual Maximum Series, the return period is estimated from the distribution of annual maxima $F_{AM}(x)$:
+Under the conventional Annual Maximum Series, the return period is estimated from the distribution of annual maxima $F_{\text{AM}}(x)$:
 
-$$T_{AM}(x) = \frac{1}{1 - F_{AM}(x)} \quad \text{(years)}$$
+$$T_{\text{AM}}(x) = \frac{1}{1 - F_{\text{AM}}(x)} \quad \text{(years)} \tag{2.4}$$
 
-Because the AMS records at most one event per year, secondary severe storms occurring within the same calendar year are omitted from $F_{AM}$. Consequently, for extreme events that occur multiple times in a year, $T_{AM}(x)$ is systematically larger than $T_{CTA}(x)$. In a companion theoretical study, Volpi (2019) demonstrated that temporal clustering of extremes increases the cumulative probability of failure across a hydraulic structure's operational lifespan compared to independent annual maximum assumptions. This mathematical discrepancy establishes the theoretical basis for the overestimation factor:
+Because the AMS records at most one event per year, secondary severe storms occurring within the same calendar year are omitted from $F_{\text{AM}}$. Consequently, for extreme events that occur multiple times in a year, $T_{\text{AM}}(x)$ is systematically larger than $T_{\text{CTA}}(x)$. In a companion theoretical study, Volpi (2019) demonstrated that temporal clustering of extremes increases the cumulative probability of failure across a hydraulic structure's operational lifespan compared to independent annual maximum assumptions. This mathematical discrepancy establishes the theoretical basis for the return period ratio $R_T(x)$ and the relative percentage excess $\Delta_T(x)$:
 
-$$OE(x) = \frac{T_{AM}(x)}{T_{CTA}(x)}$$
+$$R_T(x) = \frac{T_{\text{AM}}(x)}{T_{\text{CTA}}(x)} \tag{2.5}$$
+
+$$\Delta_T(x) = [R_T(x) - 1] \times 100\% \tag{2.6}$$
 
 #### 2.3.4.3 Process Assumptions and Tropical Precipitation Adaptation
 
@@ -96,9 +98,9 @@ While Volpi et al. (2019) validated CTA on continuous, strictly positive streamf
 
 To overcome this limitation, this research implements an adapted complete daily time-series analysis framework. Test threshold magnitudes ($M$) at the 99th percentile are derived from the complete daily time series, including zero days, preserving true calendar frequency across the full observational period as established by Volpi et al. (2019). Parameter estimation for continuous probability distributions, including the 4-Parameter Kappa distribution, is conducted on positive rainfall days ($X \ge 1.0\text{ mm}$) following the two-component mixture model of Hosking and Wallis (1997):
 
-$$F(x) = p_0 + (1 - p_0) F_{wet}(x) \quad \text{for } x \ge 1.0\text{ mm}$$
+$$F(x) = p_0 + (1 - p_0) F_{\text{wet}}(x) \quad \text{for } x \ge 1.0\text{ mm} \tag{2.7}$$
 
-where $p_0$ is the discrete proportion of dry days, and $F_{wet}(x)$ is fitted via L-moments. This dual formulation preserves the non-decimated frequency philosophy of Volpi et al. (2019) while maintaining statistical rigor for intermittent tropical rainfall.
+where $p_0$ is the discrete proportion of dry days, and $F_{\text{wet}}(x)$ is fitted via L-moments. This dual formulation preserves the non-decimated frequency philosophy of Volpi et al. (2019) while maintaining statistical rigor for intermittent tropical rainfall.
 
 ### 2.3.5 Regional Frequency Analysis
 
@@ -160,11 +162,11 @@ Conventional product moments (mean, variance, skewness, and kurtosis) have known
 
 L-moments are derived directly from probability-weighted moments (PWMs), originally defined by Greenwood et al. (1979). For a continuous random variable $X$ with cumulative distribution function $F(x)$, PWMs are defined by the expectation:
 
-$$M_{p,r,s} = E\left[X^p \{F(X)\}^r \{1-F(X)\}^s\right]$$
+$$M_{p,r,s} = E\left[X^p \{F(X)\}^r \{1-F(X)\}^s\right] \tag{2.8}$$
 
 The most commonly utilized PWM specifications are:
 
-$$\beta_r = M_{1,r,0} = E\left[X \{F(X)\}^r\right]$$
+$$\beta_r = M_{1,r,0} = E\left[X \{F(X)\}^r\right] \tag{2.9}$$
 
 Greenwood et al. (1979) established that many probability distributions expressible in inverse form have parameters that relate directly to $\beta_r$, establishing the mathematical framework for Hosking's (1990) development of L-moments.
 
@@ -172,13 +174,13 @@ Greenwood et al. (1979) established that many probability distributions expressi
 
 The first four population L-moments are defined as linear combinations of PWMs (Hosking, 1990):
 
-$$\lambda_1 = \beta_0$$
+$$\lambda_1 = \beta_0 \tag{2.10}$$
 
-$$\lambda_2 = 2\beta_1 - \beta_0$$
+$$\lambda_2 = 2\beta_1 - \beta_0 \tag{2.11}$$
 
-$$\lambda_3 = 6\beta_2 - 6\beta_1 + \beta_0$$
+$$\lambda_3 = 6\beta_2 - 6\beta_1 + \beta_0 \tag{2.12}$$
 
-$$\lambda_4 = 20\beta_3 - 30\beta_2 + 12\beta_1 - \beta_0$$
+$$\lambda_4 = 20\beta_3 - 30\beta_2 + 12\beta_1 - \beta_0 \tag{2.13}$$
 
 These scalar quantities correspond to fundamental properties of the probability distribution: $\lambda_1$ represents location (identical to the arithmetic mean); $\lambda_2$ measures scale and dispersion (comparable to standard deviation); $\lambda_3$ quantifies distributional asymmetry and skewness; and $\lambda_4$ reflects peakedness and tail weight (kurtosis).
 
@@ -186,17 +188,17 @@ These scalar quantities correspond to fundamental properties of the probability 
 
 To enable scale-invariant comparisons, Hosking (1990) defined dimensionless L-moment ratios:
 
-$$\tau = \frac{\lambda_2}{\lambda_1} \quad \text{(L-coefficient of variation, L-CV)}$$
+$$\tau = \frac{\lambda_2}{\lambda_1} \quad \text{(L-coefficient of variation, L-CV)} \tag{2.14}$$
 
-$$\tau_3 = \frac{\lambda_3}{\lambda_2} \quad \text{(L-skewness)}$$
+$$\tau_3 = \frac{\lambda_3}{\lambda_2} \quad \text{(L-skewness)} \tag{2.15}$$
 
-$$\tau_4 = \frac{\lambda_4}{\lambda_2} \quad \text{(L-kurtosis)}$$
+$$\tau_4 = \frac{\lambda_4}{\lambda_2} \quad \text{(L-kurtosis)} \tag{2.16}$$
 
 Unlike conventional moment ratios, L-moment ratios are strictly bounded:
 
-$$-1 < \tau_3 < 1$$
+$$-1 < \tau_3 < 1 \tag{2.17}$$
 
-$$\frac{5\tau_3^2 - 1}{4} \le \tau_4 < 1$$
+$$\frac{5\tau_3^2 - 1}{4} \le \tau_4 < 1 \tag{2.18}$$
 
 These defined mathematical bounds prevent extreme values from distorting the moment space, facilitating reliable interpretation and comparison across distinct sample datasets and theoretical distribution families (Hosking & Wallis, 1997).
 
@@ -214,7 +216,7 @@ Finally, L-moments are effective for regional frequency pooling because L-moment
 
 For a sample of size $n$ arranged in ascending order $x_{1:n} \le x_{2:n} \le \dots \le x_{n:n}$, sample L-moments are calculated from unbiased sample PWM estimators (Hosking, 1990):
 
-$$b_r = \frac{1}{n} \sum_{i=r+1}^{n} \frac{(i-1)(i-2)\dots(i-r)}{(n-1)(n-2)\dots(n-r)} x_{i:n}$$
+$$b_r = \frac{1}{n} \sum_{i=r+1}^{n} \frac{(i-1)(i-2)\dots(i-r)}{(n-1)(n-2)\dots(n-r)} x_{i:n} \tag{2.19}$$
 
 Sample L-moments $l_1, l_2, l_3, l_4$ are computed directly by replacing population PWMs $\beta_r$ with sample estimators $b_r$. Because sample L-moments are linear functions of order statistics, they are strictly unbiased estimators of their population counterparts, eliminating the need for empirical sample size correction factors required by conventional product moments (Hosking & Wallis, 1995).
 
@@ -224,7 +226,7 @@ The method of L-moments parameter estimation equates sample L-moments to theoret
 
 ### 2.5.8 Applications of L-Moments in Hydrology
 
-L-moments have gained widespread international adoption across water resource engineering disciplines. In flood frequency analysis, L-moments are recognized as standard procedure in national engineering guidelines (Stedinger et al., 1993; Hosking & Wallis, 1997). In precipitation frequency modeling, researchers have successfully applied L-moments to daily and sub-daily rainfall series across diverse climatic environments (Zalina et al., 2002; Zin et al., 2009; Papalexiou & Koutsoyiannis, 2013). Regional frequency analysis methodologies worldwide rely predominantly on L-moments for screening gauge homogeneity and establishing regional growth curves. In meteorological applications, L-moments are utilized for drought severity characterization (Santos et al., 2011) and extreme wind speed estimation for structural building codes (Holmes & Moriarty, 1999).
+L-moments have gained widespread international adoption across water resource engineering disciplines. In flood frequency analysis, L-moments are recognized as standard procedure in national engineering guidelines (Stedinger et al., 1993; Hosking & Wallis, 1997). In precipitation frequency modeling, researchers have successfully applied L-moments to daily and sub-daily rainfall series across diverse climatic environments (Zalina et al., 2002; Zin et al., 2009; Papalexiou & Koutsoyiannis, 2013). Regional frequency analysis methodologies worldwide rely primarily on L-moments for screening gauge homogeneity and establishing regional growth curves. In meteorological applications, L-moments are utilized for drought severity characterization (Santos et al., 2011) and extreme wind speed estimation for structural building codes (Holmes & Moriarty, 1999).
 
 ---
 
@@ -250,9 +252,9 @@ Classical statistical hypothesis tests evaluate empirical agreement with theoret
 
 The Anderson-Darling and Cramér-von Mises tests evaluate integrated squared discrepancies across the entire distribution domain:
 
-$$W^2 = n \int_{-\infty}^{\infty} [F_n(x) - F(x)]^2 \, dF(x)$$
+$$W^2 = n \int_{-\infty}^{\infty} [F_n(x) - F(x)]^2 \, dF(x) \tag{2.20}$$
 
-$$A^2 = n \int_{-\infty}^{\infty} \frac{[F_n(x) - F(x)]^2}{F(x)[1 - F(x)]} \, dF(x)$$
+$$A^2 = n \int_{-\infty}^{\infty} \frac{[F_n(x) - F(x)]^2}{F(x)[1 - F(x)]} \, dF(x) \tag{2.21}$$
 
 The Anderson-Darling statistic ($A^2$) incorporates a weighting function that accentuates discrepancies in the distribution tails, making it effective for extreme value applications (Laio, 2004).
 
@@ -262,11 +264,11 @@ To provide dimensionless, scale-independent criteria for ranking distribution pe
 
 The Mean Absolute Deviation Index (MADI) quantifies the average relative absolute difference between observed and theoretical quantiles:
 
-$$\text{MADI} = \frac{1}{n} \sum_{i=1}^{n} \frac{|x_i - \hat{x}_i|}{x_i}$$
+$$\text{MADI} = \frac{1}{n} \sum_{i=1}^{n} \frac{|x_i - \hat{x}_i|}{x_i} \tag{2.22}$$
 
 The Mean Squared Deviation Index (MSDI) penalizes larger individual quantile discrepancies through quadratic weighting:
 
-$$\text{MSDI} = \frac{1}{n} \sum_{i=1}^{n} \left( \frac{x_i - \hat{x}_i}{x_i} \right)^2$$
+$$\text{MSDI} = \frac{1}{n} \sum_{i=1}^{n} \left( \frac{x_i - \hat{x}_i}{x_i} \right)^2 \tag{2.23}$$
 
 In both formulations, $x_i$ represents the $i$-th observed sample value arranged in ascending order, and $\hat{x}_i$ denotes the theoretical quantile computed at the empirical plotting position $P_i$. Lower index values indicate superior fit, with models minimizing MADI and MSDI selected as optimal representations of the rainfall series.
 
@@ -278,7 +280,7 @@ In both formulations, $x_i$ represents the $i$-th observed sample value arranged
 
 The return period (recurrence interval) $T$ is defined as the average elapsed time between occurrences of an event exceeding a designated magnitude (Chow et al., 1988). In annual maximum modeling, the return period in years relates inversely to the annual exceedance probability $p$:
 
-$$T = \frac{1}{p} = \frac{1}{1 - F(x)}$$
+$$T = \frac{1}{p} = \frac{1}{1 - F(x)} \tag{2.24}$$
 
 A 100-year return period denotes an event with a 1% annual exceedance probability ($p = 0.01$). Stedinger and Griffis (2008) highlighted that the return period represents a long-term statistical average across numerous recurrence cycles and does not imply periodic or cyclical occurrence. Koutsoyiannis (2004) provided an exhaustive review of probabilistic return period interpretations in water engineering.
 
@@ -286,17 +288,17 @@ A 100-year return period denotes an event with a 1% annual exceedance probabilit
 
 Quantile estimation evaluates the precipitation magnitude $x_T$ corresponding to a specified return period $T$. For a candidate distribution with cumulative distribution function $F(x)$, the design quantile is determined using the inverse cumulative distribution function (quantile function):
 
-$$x_T = F^{-1}\left(1 - \frac{1}{T}\right)$$
+$$x_T = F^{-1}\left(1 - \frac{1}{T}\right) \tag{2.25}$$
 
 Analytical quantile formulations exist for the standard hydrological distributions evaluated in this study, including GEV, GLO, GPA, and 4-Parameter Kappa models (Hosking & Wallis, 1997; Rao & Hamed, 2000).
 
 ### 2.7.3 Uncertainty and Risk Assessment
 
-Uncertainty in extreme quantile estimation arises from limited historical sample lengths and model misspecification. In engineering risk assessment, the cumulative probability of failure $R$ (the likelihood of experiencing at least one design exceedance over an operational design lifespan of $n$ years) is given by:
+Uncertaincy in extreme quantile estimation arises from limited historical sample lengths and model misspecification. In engineering risk assessment, the cumulative probability of failure $R$ (the likelihood of experiencing at least one design exceedance over an operational design lifespan of $n$ years) is given by:
 
-$$R = 1 - \left(1 - \frac{1}{T}\right)^n$$
+$$R = 1 - \left(1 - \frac{1}{T}\right)^n \tag{2.26}$$
 
-For example, a hydraulic culvert designed for a 100-year recurrence interval ($T = 100$) operating over a 50-year structural lifespan ($n = 50$) maintains a 39.5% probability of being exceeded during its operational service. Consequently, systematic overestimation of return periods causes infrastructure to be under-designed, substantially escalating operational failure risk.
+For example, a hydraulic culvert designed for a 100-year recurrence interval ($T = 100$) operating over a 50-year structural lifespan ($n = 50$) maintains a 39.5% probability of being exceeded during its operational service. Consequently, systematic overestimation of return periods causes infrastructure to be under-designed, markedly escalating operational failure risk.
 
 ---
 
@@ -318,7 +320,7 @@ Zin et al. (2009) evaluated L-moments and LQ-moments for annual maximum rainfall
 
 Empirical studies across tropical Asia, Africa, and South America provide broader hydrological context. Teo and Grobe (2015) analyzed extreme precipitation trends in Singapore, identifying intensified extreme storm occurrences. Limsakul and Singhruck (2016) reported regional variability in extreme precipitation trends across Thailand. In tropical Africa, Olofintoye et al. (2009) applied L-moments to Nigerian rainfall records, identifying the Generalized Logistic distribution as the optimal model for annual maxima. Smithers and Schulze (2001) established regional design rainfall methodologies based on L-moments for Southern Africa.
 
-Globally, Papalexiou and Koutsoyiannis (2013) examined daily extreme precipitation across thousands of hydrometric stations worldwide. Their findings established that heavy-tailed distributions characterize extreme rainfall globally, and that tropical regimes exhibit pronounced skewness and tail weights that diverge substantially from temperate climate expectations. This global evidence reinforces the necessity of adopting flexible distributions and evaluating alternatives to data decimation.
+Globally, Papalexiou and Koutsoyiannis (2013) examined daily extreme precipitation across thousands of hydrometric stations worldwide. Their findings established that heavy-tailed distributions characterize extreme rainfall globally, and that tropical regimes exhibit pronounced skewness and tail weights that diverge markedly from temperate climate expectations. This global evidence reinforces the necessity of adopting flexible distributions and evaluating alternatives to data decimation.
 
 ---
 
